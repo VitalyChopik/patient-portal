@@ -1,14 +1,14 @@
 {
-  "pinList": [
+  "userList": [
     {
       "id": 1,
       "name": "Barak Obama",
-      "code": "qwerty"
+      "pin": "qwerty"
     },
     {
       "id": 2,
       "name": "Tomas Orest",
-      "code": "123456"
+      "pin": "123456"
     }
   ]
 }

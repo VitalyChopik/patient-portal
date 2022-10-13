@@ -34,18 +34,17 @@ export function inputPin() {
     event.preventDefault()
 
     try {
-      const pinUser = submit()
       const response = await fetch('http://localhost:3000/files/db.json')
-      const { pinList } = await response.json()
-      const res = pinList.find(({ code }) => code === pinUser)
+      const { userList } = await response.json()
 
-      console.log(res);
+      const enteredPin = submit()
+      const isValidPin = userList.some(({ pin }) => pin === enteredPin)
 
-      if (res) {
+      if (isValidPin) {
         console.log('Пароль введен верно!')
 
         location.pathname = 'main.html'
-        createCookie('_SID', res.code, 30)
+        createCookie('_SID', enteredPin, 30)
       } else {
         console.log('Вы ввели не верный пароль, попробуйте снова!')
 
