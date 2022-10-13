@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.page {
+  flex: 1 1 auto;
+
+  &__start {
+    padding-top: $headerHeight;
+  }
+}
+[class*="__container"] {
+  max-width: $widthContainer + $mainOffset * 2;
+  margin: 0 auto;
+  padding: 0 $mainOffset;
+}
