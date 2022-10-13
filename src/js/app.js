@@ -4,26 +4,20 @@ import * as flsFunctions from './modules'
 // import Swiper, { Navigation, Pagination } from 'swiper'
 
 flsFunctions.isWebp()
+if (location.pathname === '/') flsFunctions.inputPin()
 
-async function checkLogin() {
+const checkIfCookieExist = async () => {
+  if (location.pathname === '/') return
+
   const response = await fetch('http://localhost:3000/files/db.json')
-  const { pinList } = await response.json()
+  const { userList } = await response.json()
 
-  const cookie = document.cookie.split('=')
-  const res = pinList.find(({ code }) => code === cookie[1])
+  const cookieKey = '_SID'
+  const validPins = userList.map((user) => user.pin)
+  const cookies = document.cookie.split('; ').map((cookieString) => cookieString.split('='))
+  const isCookieExist = cookies.some(([key, value]) => (key === cookieKey) && validPins.includes(value))
 
-  console.log(location)
-  
+  if (!isCookieExist) location.pathname = '/'
+};
 
-  if (cookie[0] !== '_SID') {
-    // location.pathname = '/'
-  }
-
-  console.log(cookie);
-}
-
-document.addEventListener('DOMContentLoaded', checkLogin)
-// checkLogin()
-
-
-flsFunctions.inputPin()
+document.addEventListener('DOMContentLoaded', checkIfCookieExist)
