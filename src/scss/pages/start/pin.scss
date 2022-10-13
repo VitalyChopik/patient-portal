@@ -1,0 +1,98 @@
+.pin {
+  padding: 4px;
+  overflow: hidden;
+  // .pin__form
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &._error {
+      .pin__input {
+        color: #f56f6f;
+        border-color: #f56f6f;
+      }
+      .pin__error {
+        opacity: 1;
+        transform: translateX(0);
+        &::after {
+          animation: lineAnim 2000ms forwards linear;
+        }
+      }
+    }
+  }
+  // .pin__inputs-group
+  &__inputs-group {
+    display: flex;
+  }
+  // .pin__input
+  &__input {
+    width: 30px;
+    height: 27px;
+    border: 0.5px solid #2862b6;
+    border-radius: 3px;
+    text-align: center;
+    padding: 2px 5px;
+    transition: all 200ms ease-in-out;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #142768;
+
+    @include notLast {
+      margin-right: 7px;
+    }
+    &:focus {
+      box-shadow: 0 0 1px 1px #142768;
+    }
+    // .pin__input_space
+    &.pin__input_space {
+      margin-right: 30px;
+    }
+  }
+  // .pin__error
+  &__error {
+    position: absolute;
+    top: 27px + 14;
+    text-align: center;
+    font-size: 11px;
+    line-height: 136%;
+    text-align: center;
+    color: #f56f6f;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 200ms ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 6px;
+      background: #f56f6f;
+    }
+  }
+  // .pin__button
+  &__button {
+    margin-top: 90px;
+    padding: 15px 45px;
+    color: #fff;
+    background: #5dbff7;
+    border-radius: 50px;
+    transition: all 320ms ease-in-out;
+    &:hover {
+      background: darken(#5dbff7, 10%);
+    }
+    &:disabled {
+      cursor: no-drop;
+      background: rgba(152, 181, 198, 0.6);
+    }
+  }
+}
+
+@keyframes lineAnim {
+  0% { width: 100% }
+  100% { width: 0 }
+}
