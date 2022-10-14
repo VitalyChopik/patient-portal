@@ -1,0 +1,137 @@
+.sidebar {
+  position: relative;
+  background: #142768;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  // flex: 0 0 387px;
+  width: 387px;
+  transition: $standartTrans;
+  // .sidebar__container
+  &__container {
+    padding-left: 64px;
+    padding-right: 41px;
+  }
+  // .sidebar__button
+  &__button {
+    position: absolute;
+    right: 0;
+    top: 160px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    &:hover {
+      .sidebar__button_hide,
+      .sidebar__button_show {
+        & path {
+          fill: $orangeColor;
+        }
+      }
+    }
+    &_hide,
+    &_show {
+      transition: $standartTrans;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      & path {
+        transition: $standartTrans;
+      }
+    }
+    &_show {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -8px;
+      width: 8px;
+      height: 30px;
+      background: url("./../images/icons/arrow.png");
+    }
+  }
+  // .sidebar__logo
+  &__logo {
+  }
+  // .sidebar__menu
+  &__menu {
+    margin-top: 100px;
+  }
+}
+.logo-sidebar {
+  // .logo-sidebar__img
+  &__img {
+    path {
+      transition: $standartTrans;
+      transition-delay: 200ms;
+    }
+  }
+}
+.menu {
+  width: 100%;
+  transition: $standartTrans;
+  // .menu__list
+  &__list {
+    width: 100%;
+  }
+  // .menu__item
+  &__item {
+    @include notLast {
+      margin-bottom: 15px;
+    }
+  }
+  // .menu__link
+  &__link {
+    display: block;
+    color: #fff;
+    font-weight: 300;
+    line-height: 26px;
+    transition: $standartTrans;
+    &:hover {
+      color: $orangeColor;
+    }
+    // ._link
+    ._link {
+    }
+    // ._active
+    ._active {
+    }
+    // .menu__link_main
+    &_main {
+      text-transform: uppercase;
+      &._active {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+    // .menu__link_source
+    &_source {
+      margin-top: 24px - 15;
+      padding-top: 22px;
+      border-top: 0.5px solid #ffffff;
+    }
+  }
+}
+
+.sub-menu {
+  // .sub-menu__list
+  &__list {
+    display: none;
+  }
+  // .sub-menu__item
+  &__item {
+  }
+  // .sub-menu__link
+  &__link {
+    color: #fff;
+  }
+  // .sub-menu__icon
+  &__icon {
+  }
+  // .sub-menu__text
+  &__text {
+  }
+}
