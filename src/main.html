@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', {
-    'title': 'Main'
-  })
+@@include('html/head.html', {
+'title': 'Главная | MELANOMA'
+})
+
 <body>
-  <h1>Контент</h1>
-  <a href="./source.html">Источники</a>
+  <div class="wrapper">
+    <div class="container">
+      @@include('html/sidebar.html', {})
+      <main class="content">
+        <section class="content__top top-bg">
+          <div class="top-bg__container">
+            <div class="top-bg__body">
+              <h1 class="top-bg__title title-h1">
+                Вам назначили препараты Тафинлар (дабрафениб) и Мекинист (траметиниб)
+              </h1>
+              <p class="top-bg__description">
+                Как правило, при приеме новых лекарственных средств,
+                возникает много вопросов.<br class="br-hide">
+                Здесь мы постараемся ответить на самые частые.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </div>
   @@include('html/script.html', {})
 </body>
+
 </html>
