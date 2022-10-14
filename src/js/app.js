@@ -7,3 +7,10 @@ import { checkIfCookieExist } from './modules/checkIfCookieExist'
 flsFunctions.isWebp()
 if (location.pathname === '/') flsFunctions.inputPin()
 document.addEventListener('DOMContentLoaded', checkIfCookieExist)
+
+
+const sidebarBtn = document.querySelector('.sidebar__button')
+
+sidebarBtn.addEventListener('click', () => {
+  document.body.classList.toggle('_sidebar-show')
+})
