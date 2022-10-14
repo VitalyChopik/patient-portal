@@ -14,8 +14,54 @@
     padding-top: $headerHeight;
   }
 }
+.container {
+  flex: 1 1 auto;
+  display: flex;
+}
 [class*="__container"] {
   max-width: $widthContainer + $mainOffset * 2;
   margin: 0 auto;
   padding: 0 $mainOffset;
+}
+.content {
+  // flex: 0 1 calc(100% - 387px);
+  width: calc(100% - 387px);
+  transition: $standartTrans;
+}
+.title-h1 {
+}
+.br-hide {
+}
+
+body {
+  &._sidebar-show {
+    .sidebar {
+      width: 45px;
+      &__button {
+        &_hide {
+          opacity: 0;
+          visibility: hidden;
+        }
+        &_show {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .logo-sidebar {
+      &__img {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .menu {
+      transform: translateX(-200px);
+      opacity: 0;
+      visibility: hidden;
+    }
+    .content {
+      width: 100%;
+    }
+  }
 }
