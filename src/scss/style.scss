@@ -6,7 +6,11 @@
 @import 'config/global';
 
 @import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footerLogin';
 @import 'layout/footer';
 
 @import 'pages/start/page-start';
 @import 'pages/start/pin';
+
+@import 'pages/main/top-bg';
