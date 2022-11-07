@@ -1,7 +1,7 @@
 .top-bg {
   width: 100%;
-  padding-top: 80px;
-  padding-bottom: 48px;
+  padding-top: rem(80 + 77);
+  padding-bottom: rem(48);
   background-image: url("./../images/main/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
