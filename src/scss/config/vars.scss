@@ -1,5 +1,10 @@
-$mainOffset: 15px;
-$mainFont: 'Roboto';
+$maxWidth: 1400; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$maxWidthContainer: 1200; // ширина контейнера с учетом padding слева и справа
+$containerWidth: 1160; // ширина контейнера из макета
+
+$mainOffset: 16px;
+$mainFont: "Roboto";
 
 $widthContainer: 1170px;
 $headerHeight: 100px;
@@ -7,11 +12,12 @@ $footerHeight: 100px;
 
 $whiteColor: #fff;
 $blackColor: #131313;
+$skyColor: #5dbff7;
 $grayColor: #6f6f6f;
 $redColor: #ff4040;
 $orangeColor: #e69d4a;
 
-$firstAccentColor: $blackColor;
+$firstAccentColor: $skyColor;
 $secondAccentColor: $redColor;
 
 $mainFontFamily: $mainFont, sans-serif;
@@ -20,13 +26,8 @@ $fontSize: 16px;
 $mainRadius: 10px;
 
 $standartTrans: all 280ms ease-in-out 0ms;
-$btnBoxShadow:  0px 2px 3px rgba(#000, 10%), 
-                0px 8px 3px rgba(#000, 10%);
+$btnBoxShadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
 
-$lightBoxShadow:  0 0 2px 0 rgba(#000, 10%), 
-                  0 0 4px 0 rgba(#000, 10%), 
-                  0 0 8px 0 rgba(#000, 10%);
+$lightBoxShadow: 0 0 2px 0 rgba(#000, 10%), 0 0 4px 0 rgba(#000, 10%), 0 0 8px 0 rgba(#000, 10%);
 
-$hoverBoxShadow:  0 0 5px 0 rgba(#000, 10%), 
-                  0 0 10px 0 rgba(#000, 10%), 
-                  0 0 15px 0 rgba(#000, 10%);
+$hoverBoxShadow: 0 0 5px 0 rgba(#000, 10%), 0 0 10px 0 rgba(#000, 10%), 0 0 15px 0 rgba(#000, 10%);
