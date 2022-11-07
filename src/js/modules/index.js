@@ -33,8 +33,10 @@ export function inputPin() {
 
   async function checkPin(event) {
     event.preventDefault()
-
+    
     try {
+      buttonSubmit.disabled = true
+      
       const response = await fetch(DATA_URL)
       const { objectAuth } = await response.json()
 
@@ -56,6 +58,7 @@ export function inputPin() {
     } finally {
       this.reset()
       buttonSubmit.disabled = true
+      
       setTimeout(() => {
         this.classList.remove('_error')
         allInputs.forEach((input) => {
