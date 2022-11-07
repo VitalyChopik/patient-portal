@@ -18,6 +18,7 @@ export function isWebp() {
 }
 
 export function inputPin() {
+  const DATA_URL = 'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
   const form = document.getElementById('login-form')
   const allInputs = form.querySelectorAll('.pin__input')
   const buttonSubmit = form.querySelector('.pin__button')
@@ -34,11 +35,11 @@ export function inputPin() {
     event.preventDefault()
 
     try {
-      const response = await fetch('http://localhost:3000/files/db.json')
-      const { userList } = await response.json()
+      const response = await fetch(DATA_URL)
+      const { objectAuth } = await response.json()
 
       const enteredPin = submit()
-      const isValidPin = userList.some(({ pin }) => pin === enteredPin)
+      const isValidPin = objectAuth.some(({ Pin }) => Pin === enteredPin)
 
       if (isValidPin) {
         console.log('Пароль введен верно!')
