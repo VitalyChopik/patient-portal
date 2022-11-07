@@ -5,6 +5,7 @@
   overflow: hidden;
   &_fullscreen {
     height: 100vh;
+    overflow-y: auto;
   }
 }
 .page {
@@ -36,7 +37,7 @@
 body {
   &._sidebar-show {
     .sidebar {
-      width: 45px;
+      width: rem(45);
       &__button {
         &_hide {
           opacity: 0;
