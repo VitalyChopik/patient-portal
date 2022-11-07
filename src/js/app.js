@@ -8,9 +8,10 @@ flsFunctions.isWebp()
 if (location.pathname === '/') flsFunctions.inputPin()
 document.addEventListener('DOMContentLoaded', checkIfCookieExist)
 
-
 const sidebarBtn = document.querySelector('.sidebar__button')
 
-sidebarBtn.addEventListener('click', () => {
-  document.body.classList.toggle('_sidebar-show')
-})
+if (sidebarBtn) {
+  sidebarBtn.addEventListener('click', () => {
+    document.body.classList.toggle('_sidebar-show')
+  })
+}
