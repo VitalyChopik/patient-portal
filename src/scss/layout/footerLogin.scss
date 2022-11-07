@@ -1,41 +1,57 @@
 .footer-login {
-  flex: 1 0 95px;
-  padding: 20px 0;
+  flex: 1 0 rem(95);
   background: #f7fcfe;
-  align-content: center;
+  padding: rem(20) 0;
+  @include media(425) {
+    background-color: #233a8a;
+  }
   // .footer-login__container
   &__container {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     max-width: 100%;
-    padding-left: 65px;
-    padding-right: 65px;
-    @media (max-width: 510.98px) {
+    padding: 0 rem(64);
+    @include media(510) {
       flex-direction: column;
       align-items: flex-start;
+      padding: 0 rem(30);
+    }
+    @include media(425) {
+      justify-content: center;
+      row-gap: rem(14);
     }
   }
   // .footer-login__copyright
   &__copyright {
     display: flex;
     flex-direction: column;
+    row-gap: rem(5);
+    @include media(425) {
+      align-items: center;
+      margin: 0 auto;
+      row-gap: rem(14);
+    }
     & span {
       font-weight: 300;
-      font-size: 12px;
+      font-size: rem(12);
       letter-spacing: 0.005em;
       color: #2862b6;
-      @include notLast {
-        margin-bottom: 5px;
+      @include media(425) {
+        color: #fff;
+        font-size: rem(13);
       }
     }
   }
   // .footer-login__code
   &__code {
     font-weight: 200;
-    font-size: 12px;
+    font-size: rem(12);
     letter-spacing: 0.005em;
     color: #5dbff7;
+    @include media(425) {
+      margin: 0 auto;
+    }
   }
 }

@@ -1,6 +1,9 @@
 .pin {
-  padding: 4px;
+  padding: rem(4);
   overflow: hidden;
+  @include media(425) {
+    padding: rem(4) 0 0;
+  }
   // .pin__form
   &__form {
     position: relative;
@@ -27,36 +30,42 @@
   }
   // .pin__input
   &__input {
-    width: 30px;
-    height: 27px;
-    border: 0.5px solid #2862b6;
-    border-radius: 3px;
+    width: rem(30);
+    height: rem(27);
+    border: rem(0.5) solid #2862b6;
+    border-radius: rem(3);
     text-align: center;
-    padding: 2px 5px;
+    padding: rem(2) rem(5);
     transition: all 200ms ease-in-out;
 
     font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
+    font-size: rem(16);
+    line-height: prc(27, 16);
     color: #142768;
 
     @include notLast {
-      margin-right: 7px;
+      margin-right: rem(7);
+    }
+    @include media(768) {
+      background-color: transparent;
     }
     &:focus {
-      box-shadow: 0 0 1px 1px #142768;
+      box-shadow: 0 0 rem(1) rem(1) #142768;
     }
     // .pin__input_space
     &.pin__input_space {
-      margin-right: 30px;
+      margin-right: rem(30);
+      @include media(375) {
+        margin-right: rem(18);
+      }
     }
   }
   // .pin__error
   &__error {
     position: absolute;
-    top: 27px + 14;
+    top: rem(27 + 14);
     text-align: center;
-    font-size: 11px;
+    font-size: rem(11);
     line-height: 136%;
     text-align: center;
     color: #f56f6f;
@@ -66,24 +75,28 @@
     &::after {
       content: '';
       position: absolute;
-      top: -5px;
+      top: rem(-5);
       left: 0;
       width: 100%;
-      height: 2px;
-      border-radius: 6px;
+      height: rem(2);
+      border-radius: rem(6);
       background: #f56f6f;
     }
   }
   // .pin__button
   &__button {
-    margin-top: 90px;
-    padding: 15px 45px;
+    margin-top: rem(76);
+    padding: rem(15) rem(45);
     color: #fff;
     background: #5dbff7;
-    border-radius: 50px;
+    border-radius: rem(50);
     transition: all 320ms ease-in-out;
     &:hover {
-      background: darken(#5dbff7, 10%);
+      background: darken(#5dbff7, 5%);
+    }
+    &:active {
+      background: darken(#5dbff7, 15%);
+      box-shadow: 0 rem(2) rem(15) rgba(#000, 10%);
     }
     &:disabled {
       cursor: no-drop;
