@@ -1,0 +1,17 @@
+// !TO PERCENT %:
+@function prc($pxOne, $pxTwo) {
+  $result: math.div($pxOne, $pxTwo) * 100%;
+  @return $result;
+}
+
+// !TO REM:
+@function rem($px) {
+  $result: math.div($px, 16) + rem;
+  @return $result;
+}
+
+// !TO EM:
+@function em($px) {
+  $result: math.div($px, 16) + em;
+  @return $result;
+}
