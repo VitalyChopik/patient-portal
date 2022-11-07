@@ -1,9 +1,55 @@
 .header {
+  position: fixed;
   width: 100%;
-  height: $headerHeight;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  padding: rem(24) 0;
+  @include media(1024) {
+    background-color: #142768;
+  }
   // .header__container
   &__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-left: rem(64);
+    padding-right: rem(64);
+    @include media(1200) {
+      padding-left: rem(15);
+      padding-right: rem(15);
+    }
+  }
+  // .header__logo
+  &__logo {
+    svg{
+      path {
+        transition: $standartTrans;
+        transition-delay: 200ms;
+      }
+    }
+  }
+  // .header__burger-icon
+  &__burger-icon {
+    display: none;
+    @include media(1024) {
+      display: block;
+      background-color: transparent;
+      margin-left: auto;
+      svg {
+        path {
+          transition: $standartTrans;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
   }
 }
