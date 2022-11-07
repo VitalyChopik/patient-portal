@@ -1,15 +1,36 @@
 .sidebar {
   position: relative;
   background: #142768;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  // flex: 0 0 387px;
-  width: 387px;
+  padding-top: rem(24);
+  padding-bottom: rem(24);
+  width: rem(387);
   transition: $standartTrans;
+  @include media(1200) {
+    width: rem(295);
+  }
+  @include media(1024) {
+    position: fixed;
+    width: 100%;
+    top: -100%;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    &._sidebar-show { 
+      top: 0;
+      opacity: 1;
+      box-shadow: 0 rem(4) rem(10) rgba(#000, 25%);
+    }
+  }
   // .sidebar__container
   &__container {
-    padding-left: 64px;
-    padding-right: 41px;
+    padding-left: rem(64);
+    padding-right: rem(40);
+    @include media(1200) {
+      padding: 0 rem(15);
+    }
+    @include media(1024) {
+      max-width: 100%;
+    }
   }
   // .sidebar__button
   &__button {
@@ -19,6 +40,9 @@
     width: 20px;
     height: 20px;
     background: transparent;
+    @include media(1024) {
+      display: none;
+    }
     &:hover {
       .sidebar__button_hide,
       .sidebar__button_show {
@@ -53,20 +77,11 @@
       background: url("./../images/icons/arrow.png");
     }
   }
-  // .sidebar__logo
-  &__logo {
-  }
   // .sidebar__menu
   &__menu {
-    margin-top: 100px;
-  }
-}
-.logo-sidebar {
-  // .logo-sidebar__img
-  &__img {
-    path {
-      transition: $standartTrans;
-      transition-delay: 200ms;
+    margin-top: rem(100);
+    @include media(1024) {
+      margin-top: rem(70);
     }
   }
 }
@@ -88,30 +103,30 @@
     display: block;
     color: #fff;
     font-weight: 300;
-    line-height: 26px;
+    line-height: prc(26, 16);
     transition: $standartTrans;
+    // ._active
+    &._active {
+      font-weight: 800;
+    }
     &:hover {
       color: $orangeColor;
     }
     // ._link
-    ._link {
-    }
-    // ._active
-    ._active {
-    }
+    ._link { }
     // .menu__link_main
     &_main {
       text-transform: uppercase;
       &._active {
         font-weight: 600;
-        font-size: 18px;
+        font-size: rem(18);
       }
     }
     // .menu__link_source
     &_source {
-      margin-top: 24px - 15;
-      padding-top: 22px;
-      border-top: 0.5px solid #ffffff;
+      margin-top: rem(24 - 15);
+      padding-top: rem(22);
+      border-top: 0.5px solid #fff;
     }
   }
 }
