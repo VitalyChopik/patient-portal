@@ -200,6 +200,7 @@ margin-bottom: 40px;
         top: 0;
         left: 0;
         right: 0;
+        cursor: pointer;
         bottom: 0; 
     }
     .content {
@@ -212,6 +213,7 @@ margin-bottom: 40px;
         right: 0;
         bottom: 0;  
         z-index: 12;
+        padding: 15px;
         height: max-content;
         .btn-close {
             width: 41px;

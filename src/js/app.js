@@ -27,6 +27,8 @@ const showBtn_text = document.querySelector('.btn-show-more .text-active')
 const BtnFull = document.querySelector('.btn-full')
 const ImageFull = document.querySelector('.image-full')
 const BtnFullClose = document.querySelector('.btn-close')
+const modalWrapper = document.querySelector('.modal-wrapper')
+
 if (showBtn) {
   showBtn.addEventListener('click', () => {
     showBtn.classList.toggle('active')
@@ -41,8 +43,9 @@ if (BtnFull) {
   BtnFullClose.addEventListener('click', () => {
     ImageFull.classList.toggle('active')
   })
+  modalWrapper.addEventListener('click', () => {
+    ImageFull.classList.toggle('active')
+  })
 }
-
-
 
 
