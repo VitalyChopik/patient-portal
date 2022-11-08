@@ -7,6 +7,15 @@
     height: 100vh;
     overflow-y: auto;
   }
+  [data-observ] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: rem(2);
+    background: transparent;
+    pointer-events: none;
+  }
 }
 [class*="__container"] {
   max-width: rem($maxWidthContainer);
@@ -27,8 +36,20 @@
 .content {
   flex: 1 0;
   transition: $standartTrans;
+  // .content__top
+  &__top {}
+  // .content__about
+  &__about {}
+  // .content__useful
+  &__useful {}
 }
 .title-h1 {
+}
+.title-h2 {
+  font-weight: 500;
+  font-size: rem(30);
+  line-height: prc(36, 30);
+  color: #142768;
 }
 .br-hide {
 }
