@@ -6,6 +6,13 @@
   left: 0;
   z-index: 110;
   padding: rem(24) 0;
+  transition: $standartTrans;
+  &._sticky {
+    background-color: rgba(#142768, 80%);
+    padding: rem(8) 0;
+    box-shadow: 0 rem(4) rem(12) rgba(#000, 20%);
+    backdrop-filter: blur(rem(4));
+  }
   @include media(1024) {
     background-color: #142768;
   }
