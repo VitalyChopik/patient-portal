@@ -30,3 +30,11 @@ showBtn.addEventListener('click', () => {
   showBtn_text.classList.toggle('active')
   moreBox.classList.toggle('show')
 })
+
+
+const BtnFull = document.querySelector('.btn-full')
+const ImageFull = document.querySelector('.image-full')
+
+BtnFull.addEventListener('click', () => {
+  ImageFull.classList.toggle('active')
+})
