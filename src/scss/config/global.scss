@@ -55,6 +55,9 @@
 }
 
 body {
+  &._lock {
+    overflow: hidden;
+  }
   &._sidebar-show {
     .header__container {
       @include media(1200) {
