@@ -1,5 +1,7 @@
 import * as flsFunctions from './modules'
 import { checkIfCookieExist } from './modules/checkIfCookieExist'
+import { toggleSubMenu } from './modules/toggleSubMenu'
+import { toggleBurgerMenu } from './modules/toggleBurgerMenu'
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
@@ -9,19 +11,8 @@ if (location.pathname === '/') flsFunctions.inputPin()
 document.addEventListener('DOMContentLoaded', checkIfCookieExist)
 
 flsFunctions.headerFixed()
-
-const sidebarBtn = document.querySelector('.sidebar__button')
-const burgerButton = document.querySelector('.header__burger-icon')
-
-if (sidebarBtn) {
-  sidebarBtn.addEventListener('click', () => {
-    document.body.classList.toggle('_sidebar-show')
-  })
-
-  burgerButton.addEventListener('click', () => {
-    document.querySelector('.sidebar').classList.toggle('_sidebar-show')
-  })
-}
+toggleSubMenu()
+toggleBurgerMenu()
 
 const moreBox = document.querySelector('.more')
 const showBtn = document.querySelector('.btn-show-more')
