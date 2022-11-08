@@ -11,7 +11,9 @@
       @@include('html/sidebar.html', {})
       <main class="content">
         <div class="content__container">
+          <!-- page класс для страницы универсальны -->
             <section class="about page">
+                <!-- section__title класс для заголовков универсальный и section__image для картинок страницы -->
                 <h1 class="about__title section__title">Что такое меланома?</h1>
                 <img src="images/about/section_image.png" alt="" class="section__image">
                 <p>Меланома — агрессивная злокачественная опухоль кожи, происходящая из <span class="link">меланоцитов</span>.<span class="link-content"></span> <br> В большинстве случаев она располагается на поверхности кожи. Но может возникать на слизистых оболочках и некоторых органах, например глазах и кишечнике.</p>                    
@@ -32,13 +34,25 @@
                     </ul>
                     <div class="image">
                         <img src="images/about/stages-full.png" alt="">
-                        <img src="images/about/stages-full.png" alt="" class="image-full">
+                        <div class="image-full modal-img">
+                          <div class="modal-wrapper"></div>
+
+                          <div class="content">
+                            <div class="btn-close">
+                              <img src="images/icons/close-btn.svg" alt="">
+                              <span>Закрыть</span>
+                            </div>
+                            <img src="images/about/stages-full.png" alt="" class="">
+                          </div>
+                        </div>
+                        <!-- кнопка full -->
                         <div class="btn-full">
                             <img src="images/icons/full.svg" alt="">
                             <span>Увеличить</span>
                         </div>
                     </div>
                 </div>
+                <!-- начало расрывающегося списка -->
                 <div class="more">
                     <h2 class="about__box-title">Выделяют 4 наиболее распространенные клинические формы меланомы кожи<sup>1</sup>.</h2>
                     <p><strong>Поверхностно-распространяющаяся меланома</strong> — самый частый вид меланомы (до 70% от всех случаев). Имеет благоприятный прогноз, вероятность метастазирования низкая. Развивается на неизмененной коже или на фоне пигментного невуса в виде небольшого плоского узелка темного или почти черного цвета диаметром 1–3 мм. В дальнейшем может уплотняться, кровоточить, причинять дискомфорт в виде зуда.</p>
@@ -50,6 +64,7 @@
                     <p><strong>Акрально-лентигинозная меланома</strong> — чаще встречается на коже ладоней и стоп, в области ногтевого ложа. Имеет более агрессивный характер, часто метастазирует. Как правило, поздно диагностируется.</p>
                 </div>
                 <div class="btn-show-more active"><span class="text-active">Узнать больше о клинических формах меланомы</span><span class="text-passive">Скрыть дополнительную информацию о клинических формах</span></div>
+                <!-- завершение расрывающегося списка -->
                 <a href="braf.html" class="next-page">
                     <span>Следующий материал<strong>Роль BRAF-мутации в развитии меланомы</strong></span>
                     <img src="images/icons/arrow-next-page.svg" alt="">
