@@ -1,8 +1,7 @@
 .vscode
-
 dist
 node_modules
 package-lock.json
 gulp/version.json
-
 src/.temporary_cache
+src2/.temporary_cache
