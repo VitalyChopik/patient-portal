@@ -20,3 +20,13 @@ if (sidebarBtn) {
     document.querySelector('.sidebar').classList.toggle('_sidebar-show')
   })
 }
+
+const moreBox = document.querySelector('.more')
+const showBtn = document.querySelector('.btn-show-more')
+
+
+showBtn.addEventListener('click', () => {
+  showBtn.classList.toggle('active')
+
+  moreBox.classList.toggle('show')
+})
