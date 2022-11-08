@@ -22,6 +22,7 @@
 // Подключение стилей отдельных блоков и секций =========================================================================
 @import 'layout/header';
 @import 'layout/sidebar';
+@import 'layout/menu';
 @import 'layout/footerLogin';
 @import 'layout/footer';
 
@@ -34,4 +35,3 @@
 
 //about page
 @import 'pages/about/section';
-@import 'pages/about/media';
