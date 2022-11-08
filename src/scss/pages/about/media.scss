@@ -1,0 +1,42 @@
+@media(max-width:990px) {
+    .image-full.active .content .btn-close {
+        top: -50px;
+    }
+    .page {
+        padding-top: 100px;
+    }
+    .btn-show-more {
+        padding: 15px 30px;
+        width: 100%;
+        span {
+            text-align: center;
+        }
+    }
+}
+@media(max-width:600px) {
+    .section__title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .next-page {
+        position: relative;
+        text-align: right;
+        padding-right: 45px;
+        width: 100%;
+        img {
+            display: none;
+        }
+        &::after {
+            content:"";
+            position: absolute;
+            right: 0;
+            top: -5px;
+            bottom: 0;
+            height: 100%;
+            width: 30px;
+            background:url(../images/icons/arrow-next-page-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    }
+}
