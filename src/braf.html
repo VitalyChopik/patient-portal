@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+'title': 'Роль BRAF-мутации | MELANOMA'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <div class="container">
+      @@include('html/sidebar.html', {})
+      <main class="content">
+        <div class="content__container">
+          <!-- page класс для страницы универсальны -->
+            <section class="braf page">
+                <!-- section__title класс для заголовков универсальный и section__image для картинок страницы -->
+                <h1 class="braf__title section__title">Роль BRAF-мутации в развитии меланомы</h1>
+                <img src="images/braf/image__section.png" alt="" class="section__image">
+                <div class="braf__text">
+                    <div class="box">
+                        <img src="images/braf/icon-1.svg" alt="">
+                        <p>Чтобы понять, что такое BRAF-мутация, надо разобраться, что такое <strong>ген</strong>. Гены играют роль «кода» в построении белков. Белки регулируют процесс образования клеток.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/braf/icon-2.svg" alt="">
+                        <p>При определенных условиях могут произойти изменения в генах, которые называются <strong>мутациями</strong>. При возникновении мутации нормальная работа белков нарушается и клетки начинают функционировать неправильно.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/braf/icon-3.svg" alt="">
+                        <p>Все это может привести к появлению новообразований <br> и других опасных заболеваний.</p>
+                    </div>
+                </div>
+                <ul class="braf__list">
+                    <li><strong>BRAF (произносится как «БРАФ») — это белок,</strong> который является частью большого сигнального пути, который называется <span class="link">МАРК</span><span class="link-content"></span> (произносится как «МАПКЕЙ»), и в нормальных клетках действует как «переключатель».</li>
+                    <li>Когда это необходимо, он включается под действием специальных сигналов и активирует другие белки, помогающие регулировать деление и рост клеток.</li>
+                    <li>При некоторых видах злокачественных новообразований, включая меланому, возможны изменения гена BRAF, т.е. мутации. Когда в клетках меланомы есть мутация BRAF, этот белок-«переключатель» все время «включен», что способствует неконтролируемому росту клеток.</li>
+                    <li><strong>Таким образом, мутация в гене BRAF приводит к более быстрому и неправильному делению опухолевых клеток и, как следствие, к более агрессивному течению заболевания.</strong></li>
+                </ul>
+                <div class="image">
+                    <img src="images/braf/illustration.png" alt="">
+                    <div class="image-full modal-img">
+                      <div class="modal-wrapper"></div>
+
+                      <div class="content">
+                        <div class="btn-close">
+                          <img src="images/icons/close-btn.svg" alt="">
+                          <span>Закрыть</span>
+                        </div>
+                        <img src="images/braf/illustration.png" alt="" class="">
+                      </div>
+                    </div>
+                    <!-- кнопка full -->
+                    <div class="btn-full">
+                        <img src="images/icons/full.svg" alt="">
+                        <span>Увеличить</span>
+                    </div>
+                </div>
+                <div class="mutation">
+                    <img src="images/braf/mutation.svg" alt="">
+                    <p>Мутация BRAF V600 определяется 
+                        более чем <span>у 50% пациентов </span>
+                        с&nbspмеланомой кожи</p>
+                </div>
+                <p>
+                    Меланому с мутацией BRAF называют <strong>BRAF-положительной</strong>. При отсутствии мутации в гене BRAF опухоль называют <strong>BRAF-отрицательной</strong> или меланомой «дикого типа». Очень важно при лечении меланомы провести диагностику на наличие мутации BRAF, так как существуют препараты, которые точечно воздействуют на конкретный вид мутации.
+                </p>
+                <!-- завершение расрывающегося списка -->
+                <div class="navigation">
+                    <a href="braf.html" class="next-page">
+                        <span>Следующий материал<strong>Роль BRAF-мутации в развитии меланомы</strong></span>
+                        <img src="images/icons/arrow-next-page.svg" alt="">
+                    </a>
+                    <a href="braf.html" class="next-page">
+                        <span>Следующий материал<strong>Роль BRAF-мутации в развитии меланомы</strong></span>
+                        <img src="images/icons/arrow-next-page.svg" alt="">
+                    </a>
+                </div>
+
+            </section>
+        </div>
+
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>
