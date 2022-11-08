@@ -1,7 +1,7 @@
 .useful {
   background: #f4f4f4;
   padding-top: rem(30);
-  padding-bottom: rem(109);
+  @include adaptiveClamp('padding-bottom', 109, 30, 768, 425, 1);
   // .useful__container
   &__container {
   }
@@ -36,6 +36,10 @@
     transition: $standartTrans;
     font-size: rem(24);
     line-height: prc(26, 24);
+    @include media(425) {
+      font-size: rem(22);
+      line-height: prc(26, 22);
+    }
     &:hover {
       color: $orangeColor;
     }
@@ -46,6 +50,9 @@
     overflow: hidden;
     padding-bottom: prc(164, 268);
     border-radius: rem(3);
+    @include media(425) {
+      padding-bottom: prc(164, 364);
+    }
     &:hover {
       img {
         transform: scale(1.05);
