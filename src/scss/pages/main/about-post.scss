@@ -1,0 +1,127 @@
+.about-post {
+  padding-top: rem(30);
+  padding-bottom: rem(94);
+  // .about-post__container
+  &__container {
+  }
+  // .about-post__title
+  &__title {
+    margin-bottom: rem(30);
+    text-align: center;
+  }
+  // .about-post__items
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(414), 1fr));
+    gap: rem(16);
+    @include notLast {
+      margin-bottom: rem(100);
+    }
+  }
+  // .about-post__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: rem(3);
+    background-color: #fff;
+    box-shadow: 0 0 rem(18) rgba(#000, 10%);
+    &:hover {
+      .about-post__image {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  // .about-post__item-row
+  &__item-row {
+  }
+  // .about-post__body
+  &__body {
+    flex: 1 1 auto;
+    padding: rem(18) rem(24) rem(24);
+  }
+  // .about-post__link-text
+  &__link-text {
+    font-weight: 400;
+    font-size: rem(24);
+    line-height: prc(26, 24);
+    color: #142768;
+    transition: $standartTrans;
+    &:hover {
+      color: $orangeColor;
+    }
+  }
+  // .about-post__image
+  &__image {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: prc(155, 414);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: $standartTrans;
+    }
+  }
+}
+// ===========================================================================
+.item-row {
+  display: flex;
+  overflow: hidden;
+  border-radius: rem(3);
+  background-color: #fff;
+  box-shadow: 0 0 rem(18) rgba(#000, 10%);
+  @include media(768) {
+    flex-direction: column;
+  }
+  &:hover {
+    .item-row__image {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
+  // .item-row__body
+  &__body {
+    flex: 1 0 rem(286);
+    padding: rem(24) rem(27);
+    display: flex;
+    align-items: center;
+    @include media(768) {
+      align-items: flex-start;
+      flex-basis: auto;
+    }
+  }
+  // .item-row__link-text
+  &__link-text {
+    font-size: rem(24);
+    line-height: prc(26, 24);
+    color: #142768;
+    transition: $standartTrans;
+  }
+  // .item-row__image
+  &__image {
+    flex: 1 1 calc(100% - rem(286));
+    position: relative;
+    overflow: hidden;
+    padding-bottom: prc(276, 845);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      @include media(768) {
+        object-position: 0 rem(-80);
+      }
+    }
+  }
+}
