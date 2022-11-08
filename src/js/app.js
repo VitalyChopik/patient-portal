@@ -8,6 +8,8 @@ flsFunctions.isWebp()
 if (location.pathname === '/') flsFunctions.inputPin()
 document.addEventListener('DOMContentLoaded', checkIfCookieExist)
 
+flsFunctions.headerFixed()
+
 const sidebarBtn = document.querySelector('.sidebar__button')
 const burgerButton = document.querySelector('.header__burger-icon')
 
