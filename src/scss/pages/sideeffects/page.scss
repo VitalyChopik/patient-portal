@@ -68,6 +68,10 @@
                     background-size: contain;
                     transform: rotate(-180deg);
                     transition: all 0.6s ease-in-out;
+                    margin-right: 60px;
+                    @include media(650) {
+                        margin-right: 0;
+                    }
                 }
             }
             .accordion__content {
@@ -78,6 +82,9 @@
                 padding-right: 19px;
                 p {
                     margin-bottom: rem(25);
+                    sup {
+
+                    }
                 }
                 a {
                     text-decoration-line: underline;
@@ -104,7 +111,9 @@
 
 
 
-
+sup {
+    color: inherit;
+}
 h3.title-h3 {
     font-weight: 500;
     font-size: 20px;
