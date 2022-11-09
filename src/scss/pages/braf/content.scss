@@ -9,18 +9,26 @@
             align-items: center;
             padding: 13px 23px 19px;
             margin-bottom: rem(12);
+
             &:last-child {
                 margin-bottom: 0;
             }
             img {
                 width: 68.12px;
                 margin-right: rem(38);
+                @include media (650){
+                    width: 50px;
+                    margin-right: rem(20);
+                }
             }
         }
     }
     .braf__list {
         padding-left: rem(36);
         margin-bottom: rem(24);
+        @include media (650){
+            padding-left: rem(10);
+        }
         li {
             padding-left: 69px;
             font-size: 16px;
@@ -28,6 +36,7 @@
             color: #4B5061;
             position: relative;
             padding-left: rem(33);
+            
             &::before {
                 content:"";
                 position: absolute;
@@ -61,9 +70,19 @@
         align-items: center;
         justify-content: center;
         margin-bottom: rem(19);
+        @include media (768){
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 40px;
+        }
         img {
             max-width: 319px;
             margin-right: rem(30);
+            @include media (768){
+                margin-bottom: rem(20);
+                max-width: 100%;
+                margin-right: 0;
+            }
         }
         p {
             font-weight: 500;
@@ -87,17 +106,20 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: rem(40);
+    @include media(650) {
+        flex-direction: column;
+        justify-content: start;
+    }
     .next-page, .prev-page {
         display: flex;
         flex-direction: column;
         width: max-content;
 
 
-        @include media(600) {
+        @include media(650) {
           position: relative;
           text-align: right;
           padding-right: rem(45);
-          width: 100%;
           &::after {
             content: "";
             position: absolute;
@@ -125,18 +147,36 @@
         }
         img {
           max-width: rem(95);
-          @include media(600) {
+          @include media(650) {
             display: none;
           }
         }
     }
     .next-page {
         // margin-left: auto;
+        @include media(650) {
+            margin-left: auto;
+        }
     }
     .prev-page {
         text-align: right;
+        margin-bottom: 13px;
+        @include media(650) {
+            margin-right: auto;
+            padding-right: rem(0);
+            padding-left: rem(45);
+        }
         img {
             transform: rotate(180deg);
         }
+        &::after {
+            @include media(650) {
+                transform: rotate(180deg);
+                right: auto;
+                left: 0;
+                top: rem(-5);
+            }
+        }
+
     }
 }
