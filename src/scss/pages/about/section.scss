@@ -10,7 +10,7 @@
   }
 }
 
-.page {
+.content__page {
   padding-top: rem(82);
   @include media(990) {
     padding-top: rem(100);
@@ -39,7 +39,7 @@
     }
   }
 }
-.about {
+.content__about {
   .stages {
     margin-top: rem(53);
     ul {
