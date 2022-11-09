@@ -2,6 +2,7 @@ import * as flsFunctions from './modules'
 import { checkIfCookieExist } from './modules/checkIfCookieExist'
 import { toggleSubMenu } from './modules/toggleSubMenu'
 import { toggleBurgerMenu } from './modules/toggleBurgerMenu'
+import { setActiveMenuLink } from './modules/setActiveMenuLink'
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
@@ -13,6 +14,7 @@ document.addEventListener('DOMContentLoaded', checkIfCookieExist)
 flsFunctions.headerFixed()
 toggleSubMenu()
 toggleBurgerMenu()
+setActiveMenuLink()
 
 const moreBox = document.querySelector('.more')
 const showBtn = document.querySelector('.btn-show-more')
