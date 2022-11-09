@@ -42,6 +42,12 @@
   &__about {}
   // .content__useful
   &__useful {}
+  // .content__drug-effect
+  &__drug-effect {}
+  // .content__way-mark
+  &__way-mark {}
+  // .content__controls
+  &__controls {}
 }
 .title-h1 {
 }
@@ -49,6 +55,12 @@
   font-weight: 500;
   font-size: rem(30);
   line-height: prc(36, 30);
+  color: #142768;
+}
+.title-h3 {
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: prc(26, 20);
   color: #142768;
 }
 .br-hide {

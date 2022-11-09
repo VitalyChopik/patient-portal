@@ -1,0 +1,30 @@
+.term-block {
+  display: flex;
+  align-items: center;
+  padding: rem(24) rem(60);
+  background-color: #fff;
+  box-shadow: 0 rem(4) rem(14) rgba(40,98,182, 15%);
+  gap: rem(40);
+  // .term-block__image
+  &__image {
+    flex: 0 0 rem(70);
+    height: rem(70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+  }
+  // .term-block__body
+  &__body {
+    p {
+      line-height: prc(20, 16);
+      color: #4B5061;
+      strong {
+        font-weight: 800;
+        color: #4B5061;
+      }
+    }
+  }
+}

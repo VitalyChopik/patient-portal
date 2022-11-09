@@ -23,20 +23,32 @@
 @import 'layout/header';
 @import 'layout/sidebar';
 @import 'layout/menu';
+@import 'layout/controls';
 @import 'layout/footerLogin';
 @import 'layout/footer';
 
+// page auth====== ===========================================================================
 @import 'pages/start/page-start';
 @import 'pages/start/pin';
 
+// main page =================================================================================
 @import 'pages/main/top-bg';
 @import 'pages/main/about-post';
 @import 'pages/main/useful';
 
-//about page
+//about page ================================================================================
 @import 'pages/about/section';
 
-//braf page
+//braf page =================================================================================
 @import 'pages/braf/content';
-//side-effects
+
+// mechanism page ===========================================================================
+@import 'pages/mechanism/drug-effect';
+@import 'pages/mechanism/term-block';
+@import 'pages/mechanism/braf-block';
+@import 'pages/mechanism/allows';
+@import 'pages/mechanism/drug-list';
+@import 'pages/mechanism/way-mark';
+
+//side-effects ==============================================================================
 @import 'pages/sideeffects/page';
