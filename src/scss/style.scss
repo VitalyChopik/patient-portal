@@ -26,6 +26,12 @@
 @import 'layout/controls';
 @import 'layout/footerLogin';
 @import 'layout/footer';
+// стили для страниц побочных действий //
+@import 'layout/page-side-universal-style.scss';
+@import 'layout/faq';
+
+
+
 
 // page auth====== ===========================================================================
 @import 'pages/start/page-start';
@@ -55,3 +61,6 @@
 
 //artralgya page ==============================================================================
 @import 'pages/artralgya/content';
+
+//davlenine page ==============================================================================
+@import 'pages/davlenie/davlenie-style';
