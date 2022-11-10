@@ -11,6 +11,7 @@
   visibility: hidden;
   transition: $standartTrans;
   z-index: 200;
+  overflow-y: auto;
   &._show {
     opacity: 1;
     visibility: visible;
@@ -28,10 +29,16 @@
     max-width: rem(600);
     margin: 0 auto;
     border-radius: rem(17);
-    transition: $standartTrans;
+    transition: top 280ms ease-in-out;
     border: rem(2) solid #e69d4a;
     backdrop-filter: blur(rem(18));
     box-shadow: 0 0 rem(30) rgba(#000, 10%);
+    @include media(768) {
+      padding: rem(40) rem(24) rem(24);
+    }
+    @include media(425) {
+      padding: rem(40) rem(12) rem(12);
+    }
   }
   // . mini-popup__button-close
   &__button-close {
