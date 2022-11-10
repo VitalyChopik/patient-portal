@@ -95,13 +95,13 @@
   }
   .btn-full {
     position: absolute;
-    cursor: pointer;
     bottom: rem(10);
     right: rem(12);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: rem(41);
+    background-color: transparent;
     img {
       position: relative;
     }
