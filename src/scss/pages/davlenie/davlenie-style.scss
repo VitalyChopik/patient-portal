@@ -1,0 +1,65 @@
+.content__davlenie {
+    .davlenie__block{
+        &-text {
+            margin-bottom: rem(35);
+        }
+        &-warning {
+            display: flex;
+            align-items: center;
+            margin-bottom: rem(33);
+            img {
+                max-width: 82px;
+                width: 100%;
+                margin-right: rem(20);
+            }
+            p {
+                max-width: 660px;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #142768;
+                @include media (768) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &-recomendation {
+            padding: 19px 20px 15px 60px;
+            margin-bottom: rem(35);
+            @include media (768) {
+                padding: 20px;
+            }
+            .recomendation{
+                &__block {
+                    display: flex;
+                    flex-wrap: wrap;       
+                }
+                &__box {
+                    min-width: 33%;
+                    margin-bottom: 15px;
+                    padding-right: 10px;
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 13px;
+                            max-width: 68px;
+                            width: 100%;
+                            @include media (768) {
+                                max-width: 50px;
+                            }
+                        }
+                        p {
+                            max-width: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .davlenie-note {
+        margin-bottom: rem(30);
+        max-width: rem(795);
+    }
+}
