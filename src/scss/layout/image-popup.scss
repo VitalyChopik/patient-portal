@@ -1,0 +1,74 @@
+.image-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(125, 151, 188, 70%);
+  backdrop-filter: blur(rem(20));
+  transition: $standartTrans;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  padding: rem(50) rem(24);
+
+  display: flex;
+  justify-content: center;
+  &._show {
+    opacity: 1;
+    visibility: visible;
+    .image-popup__body {
+      top: 0;
+    }
+  }
+  // .image-popup__body
+  &__body {
+    position: relative;
+    top: rem(-50);
+    transition: $standartTrans;
+    display: flex;
+    flex-direction: column;
+  }
+  //.image-popup__button-close
+  &__button-close {
+    margin-left: auto;
+    min-width: rem(42);
+    min-height: rem(42);
+    border-radius: 50%;
+    background-color: #2862B6;
+    position: relative;
+    margin-bottom: rem(20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $standartTrans;
+    &:hover {
+      background-color: darken(#2862B6, 10%);
+    }
+    &::after {
+      content: 'Закрыть';
+      position: absolute;
+      bottom: rem(-18);
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: rem(10);
+      line-height: prc(16, 8);
+      font-weight: 400;
+      text-align: center;
+    }
+  }
+  // .image-popup__img
+  &__img {
+    text-align: center;
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
