@@ -1,0 +1,73 @@
+.headpain__davlenie {
+    .headpain__block-text {
+        max-width: 795px;
+        margin-bottom: rem(32);
+    }
+    .headpain__block-list {
+        max-width: rem(730);
+        margin-bottom: 5px;
+        .headpain-list {
+            &__item {
+                padding-left: 20px;
+                margin-bottom: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                &::before {
+                    content:"";
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    left: 0;
+                    border: 2px solid #5DBFF7;
+                }
+                span.link {
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #4B5061;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .headpain__block-recomendation {
+        padding: 19px 22px 17px;
+        margin-bottom: rem(29);
+        &-title {
+            sup {
+                color: inherit;
+            }
+        }
+        .recomendation {
+            &__block {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @include media (600) {
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+            &__box {
+                margin-bottom: 20px;
+                &-content {
+                    display: flex;
+                    align-items: center; 
+                    img {
+                        margin-right: 17px;
+                        max-width: 68px;
+                    }
+                    p {
+
+                    }
+                }
+            }
+        }
+    }
+    .headpain-note {
+        margin-bottom: rem(25);
+    }
+}
