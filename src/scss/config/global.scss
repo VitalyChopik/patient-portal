@@ -59,7 +59,7 @@
 }
 .title-h3 {
   font-weight: 500;
-  font-size: rem(20);
+  @include adaptiveClamp('font-size', 20, 18);
   line-height: prc(26, 20);
   color: #142768;
 }
