@@ -7,8 +7,10 @@ export function createMiniPopupNode() {
   modalBodyNode.append(buttonCloseNode, textNode)
   modalOverlayNode.append(modalBodyNode)
   document.body.append(modalOverlayNode)
-
+  
+  modalOverlayNode.setAttribute('data-close-popup', '')
   buttonCloseNode.setAttribute('type', 'button')
+  buttonCloseNode.setAttribute('data-close-popup', '')
   buttonCloseNode.innerHTML = `
     <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +19,7 @@ export function createMiniPopupNode() {
     </svg>
   `
 
-  modalOverlayNode.classList.add('mini-popup')
+  modalOverlayNode.classList.add('mini-popup', '_overlay')
   modalBodyNode.classList.add('mini-popup__body')
   textNode.classList.add('mini-popup__text')
   buttonCloseNode.classList.add('mini-popup__button-close')
