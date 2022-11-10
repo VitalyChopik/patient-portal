@@ -66,7 +66,7 @@
                     background-repeat: no-repeat;
                     background-position: center center;
                     background-size: contain;
-                    transform: rotate(-180deg);
+                    transform: rotate(0);
                     transition: all 0.6s ease-in-out;
                     margin-right: 60px;
                     @include media(650) {
@@ -94,7 +94,7 @@
             &.active {
                 .accordion__title {
                     span.accordion__icon {
-                        transform: rotate(0);
+                        transform: rotate(-180deg);
                         transition: all 0.6s ease-in-out;
                     }
                 }
@@ -106,21 +106,5 @@
                 }
             }
         }  
-    }
-}
-
-
-
-sup {
-    color: inherit;
-}
-h3.title-h3 {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
-    color: #142768;
-    margin-bottom: rem(20);
-    sup {
-        color: #142768;   
     }
 }

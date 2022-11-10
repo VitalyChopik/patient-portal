@@ -5,6 +5,8 @@ import { toggleBurgerMenu } from './modules/toggleBurgerMenu'
 import { setActiveMenuLink } from './modules/setActiveMenuLink'
 import { showFullImage } from './modules/showFullImage'
 import { accordion } from './modules/accordion'
+import { stickyMenu } from './modules/stickyMenu'
+import { toggleMiniPopup } from './modules/toggleMiniPopup'
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
@@ -20,3 +22,5 @@ toggleBurgerMenu()
 setActiveMenuLink()
 showFullImage()
 accordion()
+// stickyMenu()
+toggleMiniPopup()

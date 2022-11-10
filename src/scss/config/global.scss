@@ -37,17 +37,23 @@
   flex: 1 0;
   transition: $standartTrans;
   // .content__top
-  &__top {}
+  &__top {
+  }
   // .content__about
-  &__about {}
+  &__about {
+  }
   // .content__useful
-  &__useful {}
+  &__useful {
+  }
   // .content__drug-effect
-  &__drug-effect {}
+  &__drug-effect {
+  }
   // .content__way-mark
-  &__way-mark {}
+  &__way-mark {
+  }
   // .content__controls
-  &__controls {}
+  &__controls {
+  }
 }
 .title-h1 {
 }
@@ -59,11 +65,19 @@
 }
 .title-h3 {
   font-weight: 500;
-  font-size: rem(20);
+  @include adaptiveClamp("font-size", 20, 18);
   line-height: prc(26, 20);
   color: #142768;
 }
 .br-hide {
+}
+._show-small-popup {
+  font-weight: 800;
+  font-size: rem(16);
+  line-height: prc(20, 16);
+  text-decoration: underline;
+  color: #4b5061;
+  cursor: pointer;
 }
 
 body {

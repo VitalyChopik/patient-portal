@@ -5,6 +5,15 @@
   background-color: #fff;
   box-shadow: 0 rem(4) rem(14) rgba(40,98,182, 15%);
   gap: rem(40);
+  @include media(768) {
+    padding: rem(12);
+    gap: rem(12);
+  }
+  @include media(425) {
+    flex-direction: column;
+    gap: rem(12);
+    padding: rem(12) rem(8);
+  }
   // .term-block__image
   &__image {
     flex: 0 0 rem(70);

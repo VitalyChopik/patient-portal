@@ -24,8 +24,13 @@
 @import 'layout/sidebar';
 @import 'layout/menu';
 @import 'layout/controls';
+@import 'layout/mini-popup';
 @import 'layout/footerLogin';
 @import 'layout/footer';
+// стили для страниц побочных действий //
+@import 'layout/page-side-universal-style.scss';
+@import 'layout/faq';
+
 
 // page auth====== ===========================================================================
 @import 'pages/start/page-start';
