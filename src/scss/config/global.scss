@@ -78,6 +78,9 @@
   text-decoration: underline;
   color: #4b5061;
   cursor: pointer;
+  &._white-color {
+    color: #fff;
+  }
 }
 
 body {
