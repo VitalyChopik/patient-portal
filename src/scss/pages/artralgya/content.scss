@@ -1,49 +1,4 @@
-.page__side-effects {
-    
-    padding-top: rem(35);
-    a.page__side-effects__back-link {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 20px;
-        text-decoration-line: underline;
-        color: #2862B6;
-        margin-bottom: rem(25);
-        display: flex;
-        @include media(1025) {
-            margin-bottom: rem(15);
-        }
-    }
-    .section__title {
-        color: #2862B6;
-    }
-    @include media(1025) {
-        padding-top: rem(90);
-    }
-    .page__recomendation {
-        background: #FFFFFF;
-        filter: drop-shadow(0px 4px 14px rgba(40, 98, 182, 0.15));
-        .title-h3 {
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 20px;
-            color: #2862B6;
-        }
-    }
-}
-
 .content__artralgya {
-    .artralgya__block-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: rem(30);
-        .artralgya__title {
-            margin-bottom: 0;
-        }
-    }
-    .artralgya__block-text {
-        margin-bottom: 12px;
-    }
     .artralgya__block-recomendation {
         padding: 19px 23px;
         margin-bottom: rem(18);
@@ -96,61 +51,6 @@
                     width: 100%;
                 }
             }
-        }
-    }
-}
-
-.page__faq {
-    display: flex;
-    margin-bottom: rem(25);
-    @include media(600) {
-        flex-direction: column;
-    }
-    &-img {
-        max-width: 358px !important;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        @include media(768) {
-            max-width: 300px !important;
-        }
-        @include media(600) {
-            max-width: 100%  !important;
-        }
-    }
-    &-text {
-        background: #142768;
-        padding: 18px 45px 45px 35px;
-        width: 100%;
-        @include media(768) {
-            padding: 20px;
-        }
-        p {
-            max-width: 300px;
-            font-size: 16px;
-            line-height: 17px;
-            color: #FFFFFF;
-            margin-bottom: 17px;
-            @include media(600) {
-                max-width: 100%;
-            }
-        }
-        span.link {
-            color: #FFFFFF !important;
-        }
-    }
-    &-title {
-        max-width: 300px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
-        color: #FFFFFF;
-        margin-bottom: rem(32);
-        @include media(768) {
-            margin-bottom: rem(18);
-        }
-        @include media(600) {
-            max-width: 100%;
         }
     }
 }
