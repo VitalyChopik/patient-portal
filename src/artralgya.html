@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Артралгия | MELANOMA'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <div class="container">
+      @@include('html/sidebar.html', {})
+      <main class="content">
+        <div class="content__container">
+          <!-- page класс для страницы универсальны -->
+          <section class="content__artralgya content__page page__side-effects">
+            <!-- section__title класс для заголовков универсальный и section__image для картинок страницы -->
+            <a href="#" class="page__side-effects__back-link" onclick="window.history.go(-1); return false;">Назад в раздел</a>
+            <div class="artralgya__block-title">
+                <h1 class="artralgya__title section__title">Артралгия</h1>
+                <img src="images/artralgya/icon-title.svg" alt="">
+            </div>
+            <img src="images/artralgya/section__image.png" alt="" class="section__image">
+            <div class="artralgya__block-text">
+                <p>Боль может возникнуть в любых суставах: плечевых, локтевых, мелких суставах кистей рук, коленных, суставах стоп и т.д. Для снятия боли в суставах вы можете принять анальгетики и противовоспалительные препараты<sup>20</sup>.</p>
+                <br>
+                <p>Обязательно сообщите вашему врачу о появлении суставной боли. Возможно, потребуется коррекция дозы препаратов, что может сделать только лечащий врач, при необходимости он назначит дополнительные обследования.</p>
+            </div>
+            <div class="artralgya__block-recomendation">
+                <h3 class="artralgya__block-recomendation-title title-h3">Побочные явления можно и нужно контролировать вместе с лечащим врачом</h3>
+                <div class="recomendation__block">
+                    <div class="recomendation__box">
+                        <div class="recomendation__box-content">
+                            <img src="images/artralgya/icon1.svg" alt="">
+                            <p>ограничить нагрузку <br> на суставы;</p>
+                        </div>
+
+                    </div>
+                    <div class="recomendation__box">
+                        <div class="recomendation__box-content">
+                            <img src="images/artralgya/icon1.svg" alt="">
+                            <p>избегать <br> переохлаждений и травм;</p>
+                        </div>
+                    </div>
+                    <div class="recomendation__box">
+                        <div class="recomendation__box-content">
+                            <img src="images/artralgya/icon1.svg" alt="">
+                            <p>носить удобную <br>
+                                обувь;</p>
+                        </div>
+                    </div>
+                    <div class="recomendation__box">
+                        <div class="recomendation__box-content">
+                            <img src="images/artralgya/icon1.svg" alt="">
+                            <p>снизить вес.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__faq">
+                <img src="images/artralgya/faq__image.png" alt="" class="page__faq-img">
+                <div class="page__faq-text">
+                    <h4 class="page__faq-title">Какие вопросы необходимо задать врачу на приеме</h4>
+                    <p>Можно ли принимать обезболивающие препараты?</p>
+                    <p>Возможно ли использование мазей?</p>
+                    <p>Есть ли необходимость обратиться к&nbsp<span class="link">&nbspревматологу</span><span class="link-content"></span>?</p>
+                </div>
+            </div>
+
+
+            
+            <!-- завершение расрывающегося списка -->
+            <div class="navigation">
+              <a href="mechanism.html" class="prev-page">
+                <span>Предыдущий материал<strong>Взаимодействие препаратов</strong></span>
+                <img src="images/icons/arrow-next-page.svg" alt="">
+              </a>
+              <a href="pyrexia.html" class="next-page">
+                <span>Следующий материал<strong>Побочные явления: пирексия</strong></span>
+                <img src="images/icons/arrow-next-page.svg" alt="">
+              </a>
+            </div>
+
+          </section>
+        </div>
+
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>
