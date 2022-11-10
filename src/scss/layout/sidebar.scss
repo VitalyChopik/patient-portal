@@ -25,6 +25,7 @@
   }
   // .sidebar__container
   &__container {
+    height: 100%;
     padding-left: rem(64);
     padding-right: rem(40);
     @include media(1200) {

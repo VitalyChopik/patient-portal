@@ -1,6 +1,14 @@
 .menu {
   width: 100%;
   transition: $standartTrans;
+  top: 0;
+  &._sticky {
+    @media (min-width: 1024px) {
+      position: fixed;
+      max-width: max-content;
+      top: 30px;
+    }
+  }
   // .menu__list
   &__list {
     width: 100%;
