@@ -1,0 +1,62 @@
+.drug-effect {
+  padding-top: rem(82);
+  padding-bottom: rem(34);
+  // .drug-effect__container
+  &__container {
+  }
+  // .drug-effect__title
+  &__title {
+    margin-bottom: rem(30);
+  }
+  // .drug-effect__banner-image
+  &__banner-image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: prc(174, 841);
+    margin-bottom: rem(10);
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .drug-effect__subtitle
+  &__subtitle {
+    margin-bottom: rem(10);
+  }
+  // .drug-effect__article
+  &__article {
+    line-height: prc(20, 16);
+    color: #4b5061;
+    .italic {
+      font-style: italic;
+      color: #4b5061;
+    }
+    strong {
+      font-weight: 800;
+      color: #4b5061;
+    }
+  }
+  // .drug-effect__term
+  &__term {
+    margin-top: rem(10);
+  }
+  // .drug-effect__braf
+  &__braf {
+    margin-top: rem(16);
+    margin-bottom: rem(16);
+  }
+  // .drug-effect__allows
+  &__allows {
+    margin-top: rem(24);
+    margin-bottom: rem(24);
+  }
+  // .drug-effect__list
+  &__list {
+    margin-top: rem(24);
+    padding: 0 rem(30);
+  }
+}

@@ -1,0 +1,39 @@
+.way-mark {
+  // .way-mark__container
+  &__container {
+    padding: rem(32) 0;
+    border-radius: rem(6);
+    background: #f6f7fa;
+  }
+  // .way-mark__image
+  &__image {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: rem(612);
+    height: 661px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .way-mark__title
+  &__title {
+    margin-top: rem(40);
+    margin-bottom: rem(24);
+    text-align: center;
+    font-weight: 700;
+    color: #4B5061;
+  }
+  // .way-mark__list
+  &__list {
+    width: 100%;
+    max-width: rem(455);
+    margin: 0 auto;
+  }
+}
