@@ -1,54 +1,54 @@
 .page__faq {
-    display: flex;
-    margin-bottom: rem(25);
+  display: flex;
+  margin-bottom: rem(25);
+  @include media(600) {
+    flex-direction: column;
+  }
+  &-img {
+    max-width: 358px !important;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    @include media(768) {
+      max-width: 300px !important;
+    }
     @include media(600) {
-        flex-direction: column;
+      max-width: 100% !important;
     }
-    &-img {
-        max-width: 358px !important;
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        @include media(768) {
-            max-width: 300px !important;
-        }
-        @include media(600) {
-            max-width: 100%  !important;
-        }
+  }
+  &-text {
+    background: #142768;
+    padding: 18px 45px 45px 35px;
+    width: 100%;
+    @include media(768) {
+      padding: 20px;
     }
-    &-text {
-        background: #142768;
-        padding: 18px 45px 45px 35px;
-        width: 100%;
-        @include media(768) {
-            padding: 20px;
-        }
-        p {
-            max-width: 300px;
-            font-size: 16px;
-            line-height: 17px;
-            color: #FFFFFF;
-            margin-bottom: 17px;
-            @include media(600) {
-                max-width: 100%;
-            }
-        }
-        span.link {
-            color: #FFFFFF !important;
-        }
+    p {
+      max-width: 300px;
+      font-size: 16px;
+      line-height: 17px;
+      color: #ffffff !important;
+      margin-bottom: 17px;
+      @include media(600) {
+        max-width: 100%;
+      }
     }
-    &-title {
-        max-width: 300px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
-        color: #FFFFFF;
-        margin-bottom: rem(32);
-        @include media(768) {
-            margin-bottom: rem(18);
-        }
-        @include media(600) {
-            max-width: 100%;
-        }
+    span.link {
+      color: #ffffff !important;
     }
+  }
+  &-title {
+    max-width: 300px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-bottom: rem(32);
+    @include media(768) {
+      margin-bottom: rem(18);
+    }
+    @include media(600) {
+      max-width: 100%;
+    }
+  }
 }
