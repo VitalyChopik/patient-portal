@@ -4,6 +4,9 @@
   box-shadow: 0 rem(4) rem(14) rgba(40, 98, 182, 15%);
   display: flex;
   flex-direction: column;
+  @include media(425) {
+    padding: rem(12) rem(8);
+  }
   // .allows__title
   &__title {
     font-weight: 800;

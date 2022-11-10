@@ -1,103 +1,99 @@
 .content__braf {
-    padding-bottom: 74px;
-    .braf__text {
-        filter: drop-shadow(0px 4px 250px rgba(40, 98, 182, 0.15));
-        margin-bottom: rem(24);
-        .braf__text-box {
-            background: #FFFFFF;
-            display: flex;
-            align-items: center;
-            padding: 13px 23px 19px;
-            margin-bottom: rem(12);
+  .braf__text {
+    margin-bottom: rem(24);
+    .braf__text-box {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 13px 23px 19px;
+      @include notLast {
+        margin-bottom: rem(12);
+      }
+      box-shadow: 0 rem(4) rem(15) rgba(40,98,182,15%);
+      img {
+        width: rem(68);
+        margin-right: rem(38);
+        @include media(650) {
+          width: 50px;
+          margin-right: rem(20);
+        }
+      }
+    }
+  }
+  .braf__list {
+    padding-left: rem(36);
+    margin-bottom: rem(24);
+    @include media(650) {
+      padding-left: rem(10);
+    }
+    li {
+      padding-left: 69px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #4b5061;
+      position: relative;
+      padding-left: rem(33);
 
-            &:last-child {
-                margin-bottom: 0;
-            }
-            img {
-                width: 68.12px;
-                margin-right: rem(38);
-                @include media (650){
-                    width: 50px;
-                    margin-right: rem(20);
-                }
-            }
-        }
+      &::before {
+        content: "";
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border: 2px solid #5dbff7;
+        border-radius: 50%;
+        left: 0;
+        top: 7px;
+      }
+      strong {
+        font-weight: 700;
+        color: #4b5061;
+      }
+      margin-bottom: rem(20);
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span.link {
+        font-weight: 700;
+        color: #4b5061;
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
-    .braf__list {
-        padding-left: rem(36);
-        margin-bottom: rem(24);
-        @include media (650){
-            padding-left: rem(10);
-        }
-        li {
-            padding-left: 69px;
-            font-size: 16px;
-            line-height: 20px;
-            color: #4B5061;
-            position: relative;
-            padding-left: rem(33);
-            
-            &::before {
-                content:"";
-                position: absolute;
-                width: 11px;
-                height: 11px;
-                border: 2px solid #5DBFF7;
-                border-radius: 50%;
-                left: 0;
-                top: 7px;
-            }
-            strong {
-                font-weight: 700;
-                color: #4B5061;
-            }
-            margin-bottom: rem(20);
-            &:last-child{
-                margin-bottom: 0;
-            }
-            span.link {
-                font-weight: 700;
-                color: #4B5061;
-                cursor: pointer;
-                text-decoration: underline;
-            }
-        }
+  }
+  .braf__mutation {
+    background: #eef9ff;
+    padding: 48px 65px 48px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(19);
+    @include media(768) {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 40px;
     }
-    .braf__mutation {
-        background: #EEF9FF;
-        padding: 48px 65px 48px 55px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: rem(19);
-        @include media (768){
-            flex-direction: column;
-            text-align: center;
-            padding: 30px 40px;
-        }
-        img {
-            max-width: 319px;
-            margin-right: rem(30);
-            @include media (768){
-                margin-bottom: rem(20);
-                max-width: 100%;
-                margin-right: 0;
-            }
-        }
-        p {
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
-            text-transform: uppercase;
-            color: #142768;
-            span {
-                color: #E69D4A;
-            }
-        }
+    img {
+      max-width: 319px;
+      margin-right: rem(30);
+      @include media(768) {
+        margin-bottom: rem(20);
+        max-width: 100%;
+        margin-right: 0;
+      }
     }
-    .braf__conclusion {
-        max-width: 795px;
-        margin-bottom: rem(40);
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #142768;
+      span {
+        color: #e69d4a;
+      }
     }
+  }
+  .braf__conclusion {
+    max-width: 795px;
+    margin-bottom: rem(40);
+  }
 }
-
