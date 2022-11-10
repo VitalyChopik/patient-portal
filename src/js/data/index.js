@@ -1,4 +1,4 @@
-const miniPopup = {
+export const miniPopupDataText = {
   'ингибитор': `<span>Ингибитор</span> — вещество, которое останавливает или замедляет скорость физиологических или физико-химических процессов.`,
 
   'адъювантная терапия': `<span>Адъювантная терапия</span> — лекарственная терапия после проведения радикальной операции, нацеленная на снижение риска рецидива заболевания<sup>1</sup>.`,
@@ -42,4 +42,8 @@ const miniPopup = {
   'анемия': `<span>Анемия</span> — уменьшение содержания гемоглобина и эритроцитов в крови<sup>12</sup>.`,
 }
 
-export default miniPopup
+export const imagePopupDataSrc = {
+  'four stages': './images/about/stages-full.png',
+  'mark': './images/full-image-popup/way-mark.png',
+  'cell division': './images/braf/illustration.png',
+}
