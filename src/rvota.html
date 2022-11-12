@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-'title': 'Диарея | MELANOMA'
+'title': 'Тошнота и рвота | MELANOMA'
 })
 
 <body>
@@ -11,73 +11,53 @@
       @@include('html/sidebar.html', {})
       <main class="content">
         <div data-observ></div>
-        <section class="content__diareya content__page page__side-effects">
-            <div class="diareya__container"> 
+        <section class="content__rvota content__page page__side-effects">
+            <div class="rvota__container"> 
                 <!-- section__title класс для заголовков универсальный и section__image для картинок страницы -->
                 <a href="#" class="page__side-effects__back-link" onclick="window.history.go(-1); return false;">Назад в раздел</a>
-                <div class="diareya__block-title page__block-title">
-                    <h1 class="diareya__title section__title">Диарея</h1>
-                    <img src="images/diareya/icon-title.svg" alt="">
+                <div class="rvota__block-title page__block-title">
+                    <h1 class="rvota__title section__title">Тошнота и рвота</h1>
+                    <img src="images/rvota/icon-title.svg" alt="">
                 </div>
-                <img src="images/diareya/section__image.png" alt="" class="section__image">
-                <div class="diareya__block-text page__block-text">
-                    <p>У некоторых пациентов на фоне приема препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб) может возникнуть диарея. <br>
-                        Диарея — это учащенный, многократный стул. В народе такое состояние называют поносом. Диарея обычно сопровождается болью, урчанием и вздутием живота<sup>3</sup>. При появлении диареи следует своевременно обратиться к врачу.</p>
+                <img src="images/rvota/section__image.png" alt="" class="section__image">
+                <div class="rvota__block-text page__block-text">
+                    <p>В некоторых случаях при лечении препаратами Тафинлар (дабрафениб) и Мекинист (траметиниб), может появиться тошнота и рвота.</p>
+                    <p>При появлении тошноты и рвоты необходимо сообщить лечащему врачу. Избегайте приема пищи, которая усиливает тошноту (острая, жирная, жареная, очень сладкая пища). Обсудите с лечащим врачом назначение противорвотных препаратов<sup>10</sup>.</p>
                 </div>
-                <div class="diareya__block-list">
-                    <h3 class="diareya-list__title title-h3">Чем опасна диарея?</h3>
-                    <ul class="diareya-list__wrapper">
-                        <li class="diareya-list__item"><span class="_show-small-popup" data-small-modal="обезвоживание">Обезвоживание.</span></li>
-                        <li class="diareya-list__item">Изменение уровня&nbsp<span class="_show-small-popup" data-small-modal="электролиты">электролитов.</span></li>
-                    </ul>
-                </div>
-                <div class="diareya__block-recomendation page__recomendation">
-                    <h3 class="diareya__block-recomendation-title title-h3">При появлении диареи рекомендуется<sup>12</sup>:</h3>
+                <div class="rvota__block-recomendation page__recomendation">
+                    <h3 class="rvota__block-recomendation-title title-h3">Что должно вас насторожить при появлении тошноты и рвоты<sup>10</sup>:</h3>
                     <div class="recomendation__block">
                         <div class="recomendation__box">
                             <div class="recomendation__box-content">
-                                <img src="images/diareya/icon1.svg" alt="">
-                                <p>употреблять больше жидкости для устранения обезвоживания;</p>
+                                <img src="images/rvota/icon1.svg" alt="">
+                                <p>появление расстройства <br>
+                                    желудка и изменение <br>
+                                    пищевого поведения;</p>
                             </div>
 
                         </div>
                         <div class="recomendation__box">
                             <div class="recomendation__box-content">
-                                <img src="images/diareya/icon2.svg" alt="">
-                                <p>избегать приема алкоголя, кофе, молока и фруктовых соков;</p>
+                                <img src="images/rvota/icon2.svg" alt="">
+                                <p>снижение <br>
+                                    веса; </p>
                             </div>
                         </div>
                         <div class="recomendation__box">
                             <div class="recomendation__box-content">
-                                <img src="images/diareya/icon3.svg" alt="">
-                                <p>питаться чаще <br> и небольшими порциями;</p>
-                            </div>
-                        </div>
-                        <div class="recomendation__box">
-                            <div class="recomendation__box-content">
-                                <img src="images/diareya/icon4.svg" alt="">
-                                <p>уизбегать жирной, жареной <br>
-                                    пищи;</p>
-                            </div>
-                        </div>
-                        <div class="recomendation__box">
-                            <div class="recomendation__box-content">
-                                <img src="images/diareya/icon5.svg" alt="">
-                                <p>употреблять преимущественно рис, подсушенный хлеб, обработанные злаки (овсяная каша, например), постное мясо в небольшом количестве, вареный картофель.</p>
+                                <img src="images/rvota/icon3.svg" alt="">
+                                <p>появление признаков обезвоживания (жажда, уменьшение выделяемой мочи, сухость кожи).</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="diareya-note">Не принимайте самостоятельно препараты для устранения диареи.</p>
                 <div class="page__faq">
-                  <!-- TODO Исправить картинку -->
                     <img src="images/artralgya/faq__image.png" alt="" class="page__faq-img">
                     <div class="page__faq-text">
                         <h4 class="page__faq-title">Какие вопросы необходимо задать врачу на приеме</h4>
-                        <p>Как долго можно принимать препараты 
-                            от диареи?</p>
-                        <p>К чему может привести частый прием препаратов от диареи?</p>
-                        <p>Как долго придерживаться диеты?</p>
+                        <p>Следует ли продолжать прием препаратов, если тошнота и рвота сохраняются?</p>
+                        <p>В каких случаях и какие препараты можно принимать от тошноты?</p>
+                        <p>Можно ли использовать технику медленного дыхания для уменьшения тошноты и рвоты?</p>
                     </div>
                 </div>
             </div>
@@ -85,9 +65,9 @@
           </section>
           <section class="content__controls controls">
             <div class="controls__container">
-              <a href="rvota.html" class="controls__link controls__link_prev">
+              <a href="еуе-toxic.html" class="controls__link controls__link_prev">
                 <span class="controls__link-text">Предыдущий материал</span>
-                <span class="controls__link-title">Побочные явления: тошнота и рвота</span>
+                <span class="controls__link-title">Побочные явления: офтальмологическая токсичность</span>
                 <span class="controls__link-icon">
                   <svg class="_long-arrow" width="96" height="8" viewBox="0 0 96 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32843 7.21751L0.146446 4.03553C-0.0488129 3.84026 -0.0488129 3.52368 0.146446 3.32842L3.32843 0.146438C3.52369 -0.0488241 3.84027 -0.0488241 4.03554 0.146438C4.2308 0.3417 4.2308 0.658283 4.03554 0.853545L1.70711 3.18197L95.5 3.18197V4.18197L1.70711 4.18197L4.03554 6.5104C4.2308 6.70566 4.2308 7.02224 4.03554 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751Z" fill="#142768"></path>
@@ -97,11 +77,10 @@
                   </svg>
                 </span>
               </a>
-              <a href="liver.html" class="controls__link controls__link_next">
+              <a href="diareya.html" class="controls__link controls__link_next">
                 <span class="controls__link-text">Следующий материал</span>
                 <span class="controls__link-title">
-                    Побочные явления: повышение уровня 
-                    печеночных трансаминаз
+                    Побочные явления: диарея
                 </span>
                 <span class="controls__link-icon">
                   <svg class="_long-arrow" width="96" height="8" viewBox="0 0 96 8" fill="none" xmlns="http://www.w3.org/2000/svg">

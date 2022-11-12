@@ -1,0 +1,57 @@
+.rvota {
+    &__block {
+        &-text {
+            p {
+                margin-bottom: rem(20);
+            }
+        }
+        &-recomendation {
+            padding: 26px 24px 10px;
+            margin-bottom: rem(25);
+            @include media(600) {
+                padding: 15px 15px 0;
+            }
+            &-title {
+                margin-bottom: rem(40);
+                @include media(768) {
+                    margin-bottom: rem(20);
+                }
+            }
+            .recomendation{
+                &__block {
+                    padding-left: rem(92);
+                    display: flex;
+                    flex-wrap: wrap;
+                    @include media(768) {
+                        padding-left: 0;
+                    }
+                }
+                &__box {
+                    margin-bottom: rem(40);
+                    padding-right: 80px;
+                    @include media(768) {
+                        margin-bottom: rem(20);
+                        padding-right: rem(20);
+
+                    }
+                    @include media(600) {
+                        margin-bottom: rem(20);
+                        padding-right: 0;
+
+                    }
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: rem(30);
+                            @include media(600) {
+                                margin-right: rem(13);
+        
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
