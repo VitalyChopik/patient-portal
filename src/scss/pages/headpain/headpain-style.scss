@@ -7,6 +7,9 @@
         max-width: rem(730);
         margin-bottom: 5px;
         .headpain-list {
+            &__title {
+                margin-bottom: rem(16);
+            }
             &__item {
                 padding-left: 20px;
                 margin-bottom: 20px;
@@ -37,6 +40,7 @@
         padding: 19px 22px 17px;
         margin-bottom: rem(29);
         &-title {
+            margin-bottom: rem(23);
             sup {
                 color: inherit;
             }
