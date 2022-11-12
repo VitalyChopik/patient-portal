@@ -1,0 +1,28 @@
+.drug-interactions {
+  padding-top: rem(100);
+  // .drug-interactions__container
+  &__container {}
+  // .drug-interactions__title
+  &__title {
+    margin-bottom: rem(30);
+  }
+  // .drug-interactions__banner-image
+  &__banner-image {
+    margin-bottom: rem(12);
+  }
+  // .drug-interactions__subtitle
+  &__subtitle {
+    margin-bottom: rem(20);
+  }
+  // .drug-interactions__article
+  &__article {
+    margin-bottom: rem(24);
+  }
+  // .drug-interactions__counter-indications
+  &__counter-indications {
+    margin-bottom: rem(48);
+    box-shadow: none;
+  }
+  // .drug-interactions__full-img
+  &__full-img {}
+}
