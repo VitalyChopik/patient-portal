@@ -46,4 +46,5 @@ export const imagePopupDataSrc = {
   'four stages': './images/about/stages-full.png',
   'mark': './images/full-image-popup/way-mark.png',
   'cell division': './images/braf/illustration.png',
+  'before-after': './images/why/bg_02.jpg',
 }
