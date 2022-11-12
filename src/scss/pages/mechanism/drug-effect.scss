@@ -10,36 +10,14 @@
   }
   // .drug-effect__banner-image
   &__banner-image {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: prc(174, 841);
     margin-bottom: rem(10);
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
   // .drug-effect__subtitle
   &__subtitle {
     margin-bottom: rem(10);
   }
   // .drug-effect__article
-  &__article {
-    line-height: prc(20, 16);
-    color: #4b5061;
-    .italic {
-      font-style: italic;
-      color: #4b5061;
-    }
-    strong {
-      font-weight: 800;
-      color: #4b5061;
-    }
-  }
+  &__article { }
   // .drug-effect__term
   &__term {
     margin-top: rem(10);
