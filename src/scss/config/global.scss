@@ -56,7 +56,8 @@
   &__controls {
   }
   // .content__why-about
-  &__why-about {}
+  &__why-about {
+  }
 }
 .title-h1 {
 }
@@ -181,7 +182,7 @@
     flex-direction: column;
     gap: rem(8);
     @include notLast {
-      border-bottom: rem(1) solid #2862B6;
+      border-bottom: rem(1) solid #2862b6;
     }
     @include media(425) {
       padding: rem(12);
@@ -229,6 +230,88 @@
       padding-left: rem(12);
       padding-right: rem(12);
     }
+  }
+}
+.guidance-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(rem(300), 1fr));
+  gap: rem(20);
+  // .guidance-list__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+  }
+  // .guidance-list__icon
+  &__icon {
+    flex: 0 0 rem(68);
+    height: rem(68);
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // .guidance-list__text
+  &__text {
+    font-size: rem(16);
+    line-height: prc(20, 16);
+    color: #4b5061;
+  }
+}
+.remark {
+  font-size: rem(12);
+  line-height: prc(20, 12);
+  color: #cacaca;
+}
+.download-template {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto rem(50);
+  gap: rem(18);
+  padding: rem(30) rem(24);
+  background-color: #c9ebff;
+  // .download-template__title
+  &__title {
+    max-width: 100%;
+  }
+  // .download-template__description
+  &__description {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+  }
+  // .download-template__download-link
+  &__download-link {
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+    background-color: #2862b6;
+    border-radius: rem(50);
+    width: rem(230);
+    font-size: rem(16);
+    color: #ffffff;
+    padding: rem(16) rem(8);
+    text-align: center;
+    transition: $standartTrans;
+    &:hover {
+      background-color: darken(#2862b6, 10%);
+    }
+    &:active {
+      background-color: darken(#2862b6, 15%);
+    }
+  }
+  // .download-template__image
+  &__image {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    width: 100%;
+
   }
 }
 body {

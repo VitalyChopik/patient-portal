@@ -1,0 +1,44 @@
+.pirexia {
+    &__block {
+        &-text {
+            max-width: 795px;
+            p {
+                margin-bottom: rem(20);
+            }
+        }
+        &-recomendation {
+            padding: 19px 22px 19px;
+            margin-bottom: rem(30);
+            &-title {
+                margin-bottom: rem(25);
+            }
+            .recomendation {
+                &__block {
+                    display: flex;
+                    justify-content: space-between;
+                    @include media(768) {
+                        flex-direction: column;
+                    }
+                }
+                &__box {
+                    padding-right: rem(20);
+                    margin-bottom: rem(20);
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: rem(15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__counter-indications {
+        box-shadow: none;
+        margin-bottom: rem(38);
+        .drug-list__item {
+            font-weight: 700;
+        }
+    }
+}
