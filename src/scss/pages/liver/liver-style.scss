@@ -1,0 +1,48 @@
+.content__liver {
+    .liver__block{
+        &-text {
+            max-width: 795px;
+            p {
+                margin-bottom: rem(20);
+            }
+            .headpain__block-text__title {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                color: #142768;
+                margin-bottom: rem(16);
+            }
+        }
+        &-recomendation {
+            padding: 18px 23px 23px;
+            margin-bottom: rem(30);
+            @include media(600){
+                padding-bottom: rem(0);
+            }
+            &-title {
+                margin-bottom: rem(49);
+                @include media(600){
+                    margin-bottom: rem(25);
+                }
+            }
+            .recomendation {
+                &__block {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                }
+                &__box {
+                   width: 25%;
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center; 
+                   text-align: center;
+                   margin-bottom: 25px;
+                   @include media(600){
+                        width: 50%;
+                   }
+                }
+            }
+        }
+    }
+}
