@@ -128,8 +128,9 @@
     gap: rem(1);
     padding: rem(1);
     background-color: #2862b6;
-    @include media(630) {
+    @include media(640) {
       grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
     }
   }
   // .drug-storage__conditions-item
@@ -139,12 +140,18 @@
     display: flex;
     flex-direction: column;
     gap: rem(20);
+    @include media(425) {
+      padding: rem(20) rem(12);
+    }
     // .drug-storage__conditions-item_grid
     &_grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(rem(220), 1fr));
       grid-column-start: 1;
       grid-column-end: 3;
+      @include media(640) {
+        grid-column-end: 2;
+      }
     }
   }
   // .drug-storage__conditions-title
