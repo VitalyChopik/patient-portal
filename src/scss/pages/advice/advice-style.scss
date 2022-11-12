@@ -1,0 +1,18 @@
+.advice {
+    &__title {
+        margin-bottom: rem(30);
+    }
+    &__banner-image {
+        margin-bottom: rem(23);
+    }
+    &__guidance-list {
+        margin-bottom: rem(32);
+    }
+    &__download-template{
+        .download-template__image, .download-template__download-link  {
+            @include media(768) {
+                margin: 0 auto;
+            }
+        }
+    }
+}
