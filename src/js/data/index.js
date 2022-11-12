@@ -48,4 +48,6 @@ export const imagePopupDataSrc = {
   'cell division': './images/braf/illustration.png',
   'before-after': './images/why/bg_02.jpg',
   'shema-accordion': './images/priem/shema_02.png',
+  'vzaimodeistvie-table-1': './images/vzaimodeistvie/table_01.png',
+  'vzaimodeistvie-table-2': './images/vzaimodeistvie/table_02.png',
 }
