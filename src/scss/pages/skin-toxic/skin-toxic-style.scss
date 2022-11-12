@@ -1,4 +1,4 @@
-.pirexia {
+.skin-toxic {
     &__block {
         &-text {
             max-width: 795px;
@@ -16,18 +16,31 @@
                 &__block {
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
                     @include media(768) {
                         flex-direction: column;
                     }
                 }
                 &__box {
+                    width: 50%;
                     padding-right: rem(20);
                     margin-bottom: rem(20);
+                    @include media(768) { 
+                        width: 100%;
+                    }
                     &-content {
                         display: flex;
                         align-items: center;
                         img {
                             margin-right: rem(15);
+                        }
+                        p {
+                            br {
+                                @include media(768) { 
+                                    display: none;
+                                }
+                            }
+
                         }
                     }
                 }
@@ -36,10 +49,7 @@
     }
     &__counter-indications {
         box-shadow: none;
-        margin-bottom: rem(38);
-        .drug-list__item {
-            font-weight: 700;
-        }
+        margin-bottom: rem(10);
         .counter-indications__title {
             color: #142768;
         }
