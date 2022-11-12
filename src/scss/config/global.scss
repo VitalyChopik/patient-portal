@@ -55,6 +55,8 @@
   // .content__controls
   &__controls {
   }
+  // .content__why-about
+  &__why-about {}
 }
 .title-h1 {
 }
@@ -115,6 +117,10 @@
   @include notLast {
     margin-bottom: rem(12);
   }
+  @include media(425) {
+    align-items: flex-start;
+    gap: rem(12);
+  }
   // .numeric-box__number-label
   &__number-label {
     flex: 0 0 rem(48);
@@ -136,11 +142,95 @@
   // .numeric-box__article
   &__article {
     max-width: rem(700);
-    color: #4B5061;
+    color: #4b5061;
     line-height: prc(20, 16);
   }
 }
-
+.banner-text {
+  padding: rem(48) rem(80);
+  background: #eef9ff;
+  @include media(768) {
+    padding: rem(24);
+  }
+  @include media(425) {
+    padding: rem(16) rem(12);
+  }
+  // .banner-text__article
+  &__article {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: prc(26, 20);
+    color: #142768;
+    @include media(425) {
+      font-size: rem(16);
+    }
+    // ._color
+    ._color {
+      color: #5dbff7;
+    }
+  }
+}
+.counter-indications {
+  background-color: #fff;
+  box-shadow: 0 0 rem(14) rgba(40, 98, 182, 15%);
+  // .counter-indications__item
+  &__item {
+    padding: rem(16) rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+    @include notLast {
+      border-bottom: rem(1) solid #2862B6;
+    }
+    @include media(425) {
+      padding: rem(12);
+    }
+  }
+  // .counter-indications__top
+  &__top {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    gap: rem(20);
+    @include media(425) {
+      gap: rem(8);
+    }
+  }
+  // .counter-indications__icon
+  &__icon {
+    flex: 0 0 rem(60);
+    height: rem(60);
+    border-radius: 50%;
+    background-color: #5dbff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: rem(36);
+      height: rem(36);
+    }
+  }
+  // .counter-indications__title
+  &__title {
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: prc(26, 20);
+    color: #2862b6;
+    @include media(425) {
+      font-size: rem(18);
+    }
+  }
+  // .counter-indications__list
+  &__list {
+    padding-left: rem(20 + 60);
+    padding-right: rem(24);
+    @include media(425) {
+      padding-left: rem(12);
+      padding-right: rem(12);
+    }
+  }
+}
 body {
   &._lock {
     overflow: hidden;
