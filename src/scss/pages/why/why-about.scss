@@ -1,0 +1,29 @@
+.why-about {
+  padding-top: rem(80);
+  // .why-about__container
+  &__container {}
+  // .why-about__title
+  &__title {
+    margin-bottom: rem(24);
+  }
+  // .why-about__banner-image
+  &__banner-image {
+    margin-bottom: rem(16);
+  }
+  // .why-about__article
+  &__article {
+    margin-bottom: rem(16);
+  }
+  // .why-about__box
+  &__box {}
+  // .why-about__more-title
+  &__more-title {
+    margin-bottom: rem(12);
+  }
+  // .why-about__banner-text
+  &__banner-text {
+    margin-bottom: rem(24);
+  }
+  // .why-about__counter-indications
+  &__counter-indications {}
+}
