@@ -3,7 +3,7 @@ import { checkIfCookieExist } from './modules/checkIfCookieExist'
 import { toggleSubMenu } from './modules/toggleSubMenu'
 import { toggleBurgerMenu } from './modules/toggleBurgerMenu'
 import { setActiveMenuLink } from './modules/setActiveMenuLink'
-// import { showFullImage } from './modules/showFullImage'
+import { showMoreText } from './modules/showMoreText'
 import { accordion } from './modules/accordion'
 // import { stickyMenu } from './modules/stickyMenu'
 import { togglePopup } from './modules/togglePopup'
@@ -20,7 +20,7 @@ flsFunctions.headerFixed()
 toggleSubMenu()
 toggleBurgerMenu()
 setActiveMenuLink()
-// showFullImage()
+showMoreText()
 accordion()
 // stickyMenu()
 togglePopup()
