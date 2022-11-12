@@ -1,4 +1,5 @@
 export function createMiniPopupNode() {
+  const mainContentContainer = document.querySelector('.content')
   const modalOverlayNode = document.createElement('div')
   const modalBodyNode = document.createElement('div')
   const buttonCloseNode = document.createElement('button')
@@ -6,7 +7,7 @@ export function createMiniPopupNode() {
 
   modalBodyNode.append(buttonCloseNode, textNode)
   modalOverlayNode.append(modalBodyNode)
-  document.body.append(modalOverlayNode)
+  mainContentContainer.prepend(modalOverlayNode)
   
   modalOverlayNode.setAttribute('data-close-popup', '')
   buttonCloseNode.setAttribute('type', 'button')
