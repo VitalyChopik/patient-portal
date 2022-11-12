@@ -1,0 +1,61 @@
+.content__eye-toxic  {
+    .page__faq-text p {
+        max-width: 386px;
+    }
+}
+.eye-toxic {
+    &__block {
+        &-text {
+            max-width: 795px;
+            p {
+                margin-bottom: rem(20);
+            }
+        }
+        &-recomendation {
+            padding: 19px 22px 19px;
+            margin-bottom: rem(30);
+            &-title {
+                margin-bottom: rem(25);
+            }
+            .recomendation {
+                &__block {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin-bottom: 15px;
+                    @include media(768) {
+                        // flex-direction: column;
+                    }
+                }
+                &__box {
+                    margin-bottom: rem(20);
+
+                    @include media(768) { 
+                        width: 50%;
+                        margin: 0 auto rem(20);
+                    }
+                    &-content {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        img {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+    &__counter-indications {
+        box-shadow: none;
+        margin-bottom: rem(10);
+        max-width: 550px;
+        .counter-indications__title {
+            color: #142768;
+        }
+    }
+}
