@@ -1,0 +1,178 @@
+.drug-storage {
+  padding-top: rem(80);
+  // .drug-storage__container
+  &__container {
+  }
+  // .drug-storage__title
+  &__title {
+    margin-bottom: rem(30);
+  }
+  // .drug-storage__banner-image
+  &__banner-image {
+    margin-bottom: rem(12);
+  }
+  // .drug-storage__how-title
+  &__how-title {
+    margin-bottom: rem(24);
+  }
+  // .drug-storage__grid-rules
+  &__grid-rules {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: auto auto;
+    align-items: stretch;
+    gap: rem(12);
+    margin-bottom: rem(24);
+    @include media(768) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    @include media(425) {
+      gap: 0;
+    }
+  }
+  // .drug-storage__grid-item
+  &__grid-item {
+    background-color: #fff;
+    box-shadow: 0 rem(4) rem(14) rgba(40, 98, 182, 15%);
+    padding: rem(12);
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    @include media(768) {
+      align-items: flex-start;
+      gap: rem(8);
+    }
+    @include media(425) {
+      gap: rem(12);
+      box-shadow: none;
+      padding: rem(12) 0;
+    }
+    &_1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      @include media(768) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+    }
+    &_2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      @include media(768) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-items: center;
+      }
+    }
+    &_3 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      @include media(768) {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-items: center;
+      }
+    }
+  }
+  // .drug-storage__grid-icon
+  &__grid-icon {
+    flex: 0 0 rem(68);
+    height: rem(68);
+    img {
+      width: 100%;
+    }
+  }
+  // .drug-storage__grid-text
+  &__grid-text {
+    font-size: rem(16);
+    line-height: prc(20, 16);
+    color: #4b5061;
+  }
+  // .drug-storage__image
+  &__image {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: rem(24);
+    img {
+      max-width: 100%;
+    }
+  }
+  // .drug-storage__guidance-list
+  &__guidance-list {
+  }
+  // .drug-storage__remark
+  &__remark {
+    text-align: right;
+    margin: rem(12) 0;
+  }
+  // .drug-storage__download-template
+  &__download-template {
+    margin-bottom: rem(24);
+  }
+  // .drug-storage__article
+  &__article {
+  }
+  // .drug-storage__conditions-grid
+  &__conditions-grid {
+    width: 100%;
+    margin-top: rem(24);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(rem(300), 1fr));
+    gap: rem(1);
+    padding: rem(1);
+    background-color: #2862b6;
+    @include media(630) {
+      grid-template-columns: 1fr;
+    }
+  }
+  // .drug-storage__conditions-item
+  &__conditions-item {
+    background-color: #fff;
+    padding: rem(24) rem(36);
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    // .drug-storage__conditions-item_grid
+    &_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(rem(220), 1fr));
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  // .drug-storage__conditions-title
+  &__conditions-title {
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: prc(26, 20);
+    text-align: center;
+    color: #2862b6;
+  }
+  // .drug-storage__conditions-flex
+  &__conditions-flex {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+  }
+  // .drug-storage__conditions-icon
+  &__conditions-icon {
+    flex: 0 0 rem(68);
+    height: rem(68);
+    img {
+      max-width: 100%;
+    }
+  }
+  // .drug-storage__conditions-text
+  &__conditions-text {
+    font-size: rem(14);
+    line-height: prc(16, 14);
+    color: #4b5061;
+  }
+}
