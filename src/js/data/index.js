@@ -47,4 +47,5 @@ export const imagePopupDataSrc = {
   'mark': './images/full-image-popup/way-mark.png',
   'cell division': './images/braf/illustration.png',
   'before-after': './images/why/bg_02.jpg',
+  'shema-accordion': './images/priem/shema_02.png',
 }
