@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Взаимодействие препаратов | MELANOMA'
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/header.html', {})
+    <div class="container">
+      @@include('html/sidebar.html', {})
+      <main class="content">
+        <div data-observ></div>
+        <section class="content__drug-interactions drug-interactions">
+          <div class="drug-interactions__container">
+            <h2 class="drug-interactions__title title-h2">
+              Взаимодействие препаратов
+            </h2>
+            <div class="drug-interactions__banner-image page-banner-img">
+              <img src="@img/mechanism/bg_01.jpg" alt="Лекарственные препараты на полке в аптеке">
+            </div>
+            <h3 class="drug-interactions__subtitle title-h3">
+              Препараты, которые могут влиять на эффективность терапии препаратамиТафинлар (дабрафениб) и Мекинист
+              (траметиниб)<sup>6, 7</sup>
+            </h3>
+            <p class="drug-interactions__article article-p">
+              Препараты, которые вы принимаете, могут иметь схожий механизм действия с другими лекарствами. Это влияет
+              на эффективность лечения и частоту нежелательных явлений.
+            </p>
+            <div class="drug-interactions__counter-indications counter-indications">
+              <div class="counter-indications__item">
+                <div class="counter-indications__top">
+                  <div class="counter-indications__icon">
+                    <img src="@img/icons/attention.svg" alt="Attention">
+                  </div>
+                  <h4 class="counter-indications__title">
+                    Важно!
+                  </h4>
+                </div>
+                <ul class="counter-indications__list drug-list">
+                  <li class="drug-list__item">
+                    Перед началом лечения обязательно сообщите врачу о любых применяемых вами препаратах.
+                  </li>
+                  <li class="drug-list__item">
+                    Обязательно обсудите со своим лечащим врачом необходимость приема других препаратов.
+                  </li>
+                  <li class="drug-list__item">
+                    Незамедлительно расскажите врачу, если после приема других препаратов у вас ухудшилось самочувствие.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <h3 class="drug-interactions__subtitle title-h3">
+              Лекарства, которые могут влиять на эффективность препарата
+              Тафинлар (дабрафениб)<sup>6</sup>
+            </h3>
+            <div class="drug-interactions__full-img image">
+              <img src="images/vzaimodeistvie/table_01.png" alt="">
+              <!-- кнопка full -->
+              <button class="btn-full" data-image-popup="vzaimodeistvie-table-1">
+                <img src="images/icons/full.svg" alt="">
+                <span>Увеличить</span>
+              </button>
+            </div>
+            <h3 class="drug-interactions__subtitle title-h3">
+              Препараты, на эффективность которых может влиять препарат Тафинлар
+              (дабрафениб)<sup>6</sup>
+            </h3>
+            <div class="drug-interactions__full-img image">
+              <img src="images/vzaimodeistvie/table_02.png" alt="">
+              <!-- кнопка full -->
+              <button class="btn-full" data-image-popup="vzaimodeistvie-table-2">
+                <img src="images/icons/full.svg" alt="">
+                <span>Увеличить</span>
+              </button>
+            </div>
+            <h3 class="drug-interactions__subtitle title-h3">
+              Препарат Мекинист (траметиниб) за счет особого механизма действия не взаимодействует с другими препаратами<sup>7</sup>.
+            </h3>
+          </div>
+        </section>
+        <section class="content__controls controls">
+          <div class="controls__container">
+            <a href="priem.html" class="controls__link controls__link_prev">
+              <span class="controls__link-text">Предыдущий материал</span>
+              <span class="controls__link-title">Прием и хранение препаратов</span>
+              <span class="controls__link-icon">
+                <svg class="_long-arrow" width="96" height="8" viewBox="0 0 96 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.32843 7.21751L0.146446 4.03553C-0.0488129 3.84026 -0.0488129 3.52368 0.146446 3.32842L3.32843 0.146438C3.52369 -0.0488241 3.84027 -0.0488241 4.03554 0.146438C4.2308 0.3417 4.2308 0.658283 4.03554 0.853545L1.70711 3.18197L95.5 3.18197V4.18197L1.70711 4.18197L4.03554 6.5104C4.2308 6.70566 4.2308 7.02224 4.03554 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751Z"
+                    fill="#142768"></path>
+                </svg>
+                <svg class="_arrow" width="27" height="30" viewBox="0 0 27 30" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M26.4142 13.5858C27.1953 14.3668 27.1953 15.6332 26.4142 16.4142L13.6863 29.1421C12.9052 29.9232 11.6389 29.9232 10.8579 29.1421C10.0768 28.3611 10.0768 27.0948 10.8579 26.3137L22.1716 15L10.8579 3.68629C10.0768 2.90524 10.0768 1.63891 10.8579 0.857866C11.6389 0.0768168 12.9052 0.0768167 13.6863 0.857865L26.4142 13.5858ZM25 17L24 17L24 13L25 13L25 17Z"
+                    fill="#2862B6" />
+                </svg>
+              </span>
+            </a>
+            <a href="side-effects.html" class="controls__link controls__link_next">
+              <span class="controls__link-text">Следующий материал</span>
+              <span class="controls__link-title">
+                Побочные явления
+              </span>
+              <span class="controls__link-icon">
+                <svg class="_long-arrow" width="96" height="8" viewBox="0 0 96 8" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.32843 7.21751L0.146446 4.03553C-0.0488129 3.84026 -0.0488129 3.52368 0.146446 3.32842L3.32843 0.146438C3.52369 -0.0488241 3.84027 -0.0488241 4.03554 0.146438C4.2308 0.3417 4.2308 0.658283 4.03554 0.853545L1.70711 3.18197L95.5 3.18197V4.18197L1.70711 4.18197L4.03554 6.5104C4.2308 6.70566 4.2308 7.02224 4.03554 7.21751C3.84027 7.41277 3.52369 7.41277 3.32843 7.21751Z"
+                    fill="#142768"></path>
+                </svg>
+                <svg class="_arrow" width="27" height="30" viewBox="0 0 27 30" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.4142 13.5858C17.1953 14.3668 17.1953 15.6332 16.4142 16.4142L3.68629 29.1421C2.90524 29.9232 1.63891 29.9232 0.857866 29.1421C0.0768168 28.3611 0.0768167 27.0948 0.857865 26.3137L12.1716 15L0.857863 3.68629C0.0768145 2.90524 0.0768144 1.63891 0.857863 0.857866C1.63891 0.0768168 2.90524 0.0768167 3.68629 0.857865L16.4142 13.5858ZM15 17L14 17L14 13L15 13L15 17Z"
+                    fill="#2862B6" />
+                  <path
+                    d="M26.4142 13.5858C27.1953 14.3668 27.1953 15.6332 26.4142 16.4142L13.6863 29.1421C12.9052 29.9232 11.6389 29.9232 10.8579 29.1421C10.0768 28.3611 10.0768 27.0948 10.8579 26.3137L22.1716 15L10.8579 3.68629C10.0768 2.90524 10.0768 1.63891 10.8579 0.857866C11.6389 0.0768168 12.9052 0.0768167 13.6863 0.857865L26.4142 13.5858ZM25 17L24 17L24 13L25 13L25 17Z"
+                    fill="#2862B6" />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+    @@include('html/footer.html', {})
+  </div>
+  @@include('html/script.html', {})
+</body>
+
+</html>
