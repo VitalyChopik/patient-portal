@@ -2,6 +2,7 @@ import { miniPopupDataText, imagePopupDataSrc } from '../data'
 import { createMiniPopupNode } from './createMiniPopup'
 import { createImagePopup } from './createImagePopup'
 import { toggleBodyLock } from './toggleBodyLock'
+import { checkSidebarWidth } from './checkSidebarWidth'
 
 export function togglePopup() {
   const contentPage = document.querySelector('.content')
@@ -21,6 +22,7 @@ export function togglePopup() {
 
         if (window.innerWidth > 1024) {
           document.body.classList.add('_sidebar-close')
+          checkSidebarWidth()
         }
 
         setTimeout(() => {
