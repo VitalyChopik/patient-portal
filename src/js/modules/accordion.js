@@ -16,7 +16,7 @@ export function accordion() {
           return
         }
         // otherwise, remove the open class
-        item.classList.remove('active')
+        // item.classList.remove('active')
       })
     }
 
