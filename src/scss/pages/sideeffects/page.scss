@@ -3,6 +3,11 @@
     margin-bottom: 12px;
   }
 }
+.side-effects {
+  &__block-title {
+    margin-bottom: rem(30);
+  }
+}
 .side-effects__accordion {
   margin-top: 40px;
   .side-effects__accordion-title {
