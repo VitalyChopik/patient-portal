@@ -18,28 +18,28 @@ export const checkIfCookieExist = async () => {
       key === cookieKey && validPins.includes(value.split(',')[2])
   )
 
-  if (isCookieExist) {
-    const [doctorId, userId, pin] = cookies
-      .find(([key, _]) => key === cookieKey)[1]
-      .split(',')
-      .map((value) => value)
-    
-    window.dataLayer.push({
-      event: 'login',
-      user_id: userId,
-      employee: doctorId,
-      pin: pin,
-      authorization: '1',
-    })
-  } else {
-    window.dataLayer.push({
-      event: 'login_error',
-      error: 'Пароль либо не ввели, либо не верно ввели',
-      authorization: '0',
-    })
-  }
+  const [doctorId, userId, pin] = isCookieExist
+    ? cookies.find(([key]) => key === cookieKey)[1].split(',')
+    : []
 
-  if (isCookieExist && location.pathname === '/') location.pathname = '/main.html'
+  const dataLayerObject = isCookieExist
+    ? {
+        event: 'login',
+        user_id: userId,
+        employee: doctorId,
+        pin: pin,
+        authorization: '1',
+      }
+    : {
+        event: 'login_error',
+        error: 'Пароль либо не ввели, либо не верно ввели',
+        authorization: '0',
+      }
+
+  window.dataLayer.push(dataLayerObject)
+
+  if (isCookieExist && location.pathname === '/')
+    location.pathname = '/main.html'
   if (location.pathname === '/') return
   if (!isCookieExist) location.pathname = '/'
 }
