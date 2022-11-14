@@ -1,8 +1,8 @@
-export function setActiveMenuLink() {
-  const menu = document.querySelector('.sidebar')
+import { sidebar } from '../helpers/elementsNodeList'
 
-  if (menu) {
-    const links = menu.querySelectorAll('._link')
+export function setActiveMenuLink() {
+  if (sidebar) {
+    const links = sidebar.querySelectorAll('._link')
 
     document.addEventListener('DOMContentLoaded', () => {
       const path = location.pathname.split('/')[1]

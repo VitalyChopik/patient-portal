@@ -1,3 +1,5 @@
+import { body } from '../helpers/elementsNodeList'
+
 export function createImagePopup() {
   const popupOverlayNode = document.createElement('div')
   const popupBodyNode = document.createElement('div')
@@ -8,8 +10,7 @@ export function createImagePopup() {
   imageContainerNode.append(imageNode)
   popupBodyNode.append(popupButtonCloseNode, imageContainerNode)
   popupOverlayNode.append(popupBodyNode)
-
-  document.body.append(popupOverlayNode)
+  body.append(popupOverlayNode)
 
   popupOverlayNode.setAttribute('data-close-popup', '')
   popupButtonCloseNode.setAttribute('data-close-popup', '')

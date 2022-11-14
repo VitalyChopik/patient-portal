@@ -1,13 +1,12 @@
+import { sidebarToggleButton, burgerButton } from '../helpers/elementsNodeList'
 import { checkSidebarWidth } from './checkSidebarWidth'
 import { toggleBodyLock } from './toggleBodyLock'
 
-export function toggleBurgerMenu() {
-  const sidebarBtn = document.querySelector('.sidebar__button')
-  const burgerButton = document.querySelector('.header__burger-icon')
+const toggleBurgerMenu = () => {
   let isLock = false
 
-  if (sidebarBtn) {
-    sidebarBtn.onclick = () => {
+  if (sidebarToggleButton) {
+    sidebarToggleButton.onclick = () => {
       document.body.classList.toggle('_sidebar-close')
       setTimeout(() => checkSidebarWidth(), 280)
     }
@@ -20,3 +19,5 @@ export function toggleBurgerMenu() {
     }
   }
 }
+
+export { toggleBurgerMenu }

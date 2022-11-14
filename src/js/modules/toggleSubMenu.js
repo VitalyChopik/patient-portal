@@ -1,8 +1,6 @@
-export function toggleSubMenu() {
-  const showSubMenuButton = document.querySelector('.menu__link_button span')
-  const closeSubMenuButton = document.querySelector('.sub-menu__item_back')
-  const subMenu = document.querySelector('.sub-menu__list')
+import { showSubMenuButton, closeSubMenuButton, subMenu } from '../helpers/elementsNodeList'
 
+const toggleSubMenu = () => {
   if (subMenu) {
     showSubMenuButton.onclick = (e) => {
       e.preventDefault()
@@ -17,3 +15,5 @@ export function toggleSubMenu() {
     }
   }
 }
+
+export { toggleSubMenu }

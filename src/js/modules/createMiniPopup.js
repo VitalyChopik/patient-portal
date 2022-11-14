@@ -1,6 +1,6 @@
+import { body } from '../helpers/elementsNodeList'
+
 export function createMiniPopupNode() {
-  // const mainContentContainer = document.querySelector('.content')
-  // const targetClickContainer = document.querySelector('._show-small-popup')
   const modalOverlayNode = document.createElement('div')
   const modalBodyNode = document.createElement('div')
   const buttonCloseNode = document.createElement('button')
@@ -8,7 +8,7 @@ export function createMiniPopupNode() {
 
   modalBodyNode.append(buttonCloseNode, textNode)
   modalOverlayNode.append(modalBodyNode)
-  document.body.append(modalOverlayNode)
+  body.append(modalOverlayNode)
   
   modalOverlayNode.setAttribute('data-close-popup', '')
   buttonCloseNode.setAttribute('type', 'button')

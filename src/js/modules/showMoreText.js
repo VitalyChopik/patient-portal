@@ -1,13 +1,11 @@
-export function showMoreText() {
-  const moreBox = document.querySelector('.more')
-  const showBtn = document.querySelector('.btn-show-more')
-  const showBtn_text = document.querySelector('.btn-show-more .text-active')
+import { moreBoxContainer, showMoreButton, showMoreButtonText } from '../helpers/elementsNodeList'
 
-  if (showBtn) {
-    showBtn.addEventListener('click', () => {
-      showBtn.classList.toggle('active')
-      showBtn_text.classList.toggle('active')
-      moreBox.classList.toggle('show')
+export function showMoreText() {
+  if (showMoreButton) {
+    showMoreButton.addEventListener('click', () => {
+      showMoreButton.classList.toggle('active')
+      showMoreButtonText.classList.toggle('active')
+      moreBoxContainer.classList.toggle('show')
     })
   }
 }
