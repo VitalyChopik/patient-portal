@@ -21,4 +21,10 @@
       border: rem(2) solid #5dbff7;
     }
   }
+  // .drug-list__item-sup
+  &__item-sup {
+    margin-left: rem(-6);
+    position: relative;
+    top: rem(-4);
+  }
 }
