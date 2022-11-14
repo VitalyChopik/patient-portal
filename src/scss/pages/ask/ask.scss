@@ -1,40 +1,40 @@
 .ask {
-    &__title, &__banner-image {
-        margin-bottom: rem(30);
-    }
-    &__accordion {
-        .accordion {
-
-            &__title {
-                h3 {
-                    @include media (600) {
-                        max-width: 250px;
-                    }
-                }
-                &.one {
-                    background: #5DBFF7 !important;
-                }
-                &.two {
-                    background: #2862B6 !important;
-                }
-                &.tree {
-                    background: #142768 !important;
-                }
-            }
+  &__title,
+  &__banner-image {
+    margin-bottom: rem(30);
+  }
+  &__accordion {
+    .accordion {
+      &__title {
+        h3 {
+          @include media(600) {
+            max-width: 250px;
+          }
         }
-    }
-    &__list {
-        padding-left: 20px;
-        &-item {
-            list-style:decimal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 20px;
-            color: #4B5061;
-            margin-bottom: rem(20);
-            &:last-child {
-                margin-bottom: 0;
-            }
+        &.one {
+          background: #5dbff7 !important;
         }
+        &.two {
+          background: #2862b6 !important;
+        }
+        &.tree {
+          background: #142768 !important;
+        }
+      }
     }
+  }
+  &__list {
+    padding-left: 20px;
+    &-item {
+      list-style: decimal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #4b5061;
+      margin-bottom: rem(20);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

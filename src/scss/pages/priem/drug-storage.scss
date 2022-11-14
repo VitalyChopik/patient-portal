@@ -115,36 +115,16 @@
   // .drug-storage__download-template
   &__download-template {
     margin-bottom: rem(24);
+    .download-template__download-link {
+      align-self: center;
+    }
+    .download-template__image {
+      align-self: center;
+    }
   }
   // .drug-storage__accordion
   &__accordion {
-    .accordion__item_img {
-      .accordion__content {
-        padding: 0 !important;
-      }
-      .image {
-        margin-bottom: 0;
-      }
-    }
-    .accordion__title {
-      gap: rem(8);
-      @include media(425) {
-        padding: rem(12) rem(8) !important;
-      }
-      h3 {
-        @include media(425) {
-          font-size: rem(16) !important;
-        }
-      }
-    }
-    .accordion__item.active .accordion__content {
-      @include media(425) {
-        padding: rem(12) !important;
-      }
-      p {
-        color: #4b5061;
-      }
-    }
+    margin-bottom: rem(24);
   }
   // .drug-storage__article
   &__article {
