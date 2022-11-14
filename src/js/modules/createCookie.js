@@ -1,4 +1,6 @@
 export function createCookie(name, value, days) {
+  const { DoctorId, UserId, Pin } = value
+  
   let expires
 
   if (days) {
@@ -9,5 +11,5 @@ export function createCookie(name, value, days) {
     expires = ''
   }
   
-  document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(value)}${expires}; path=/`
+  document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(DoctorId)},${encodeURIComponent(UserId)},${encodeURIComponent(Pin)}${expires}; path=/`
 }

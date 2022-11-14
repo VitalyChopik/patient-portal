@@ -18,7 +18,8 @@ export function isWebp() {
 }
 
 export function inputPin() {
-  const DATA_URL = 'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
+  const DATA_URL =
+    'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
   const form = document.getElementById('login-form')
   const allInputs = form.querySelectorAll('.pin__input')
   const buttonSubmit = form.querySelector('.pin__button')
@@ -33,10 +34,10 @@ export function inputPin() {
 
   async function checkPin(event) {
     event.preventDefault()
-    
+
     try {
       buttonSubmit.disabled = true
-      
+
       const response = await fetch(DATA_URL)
       const { objectAuth } = await response.json()
 
@@ -45,9 +46,10 @@ export function inputPin() {
 
       if (isValidPin) {
         console.log('Пароль введен верно!')
+        const loginInfo = objectAuth.find(({ Pin }) => Pin === 'AfLfJp')
 
         location.pathname = 'main.html'
-        createCookie('_SID', enteredPin, 30)
+        createCookie('_SID', loginInfo, 30)
       } else {
         console.log('Вы ввели не верный пароль, попробуйте снова!')
 
@@ -58,7 +60,7 @@ export function inputPin() {
     } finally {
       this.reset()
       buttonSubmit.disabled = true
-      
+
       setTimeout(() => {
         this.classList.remove('_error')
         allInputs.forEach((input) => {

@@ -3,15 +3,17 @@ export function toggleSubMenu() {
   const closeSubMenuButton = document.querySelector('.sub-menu__item_back')
   const subMenu = document.querySelector('.sub-menu__list')
 
-  showSubMenuButton.onclick = (e) => {
-    e.preventDefault()
-    
-    subMenu.classList.toggle('_show-submenu')
-    showSubMenuButton.classList.toggle('_active')
-  }
-  
-  closeSubMenuButton.onclick = () => { 
-    subMenu.classList.remove('_show-submenu')
-    showSubMenuButton.classList.remove('_active')
+  if (subMenu) {
+    showSubMenuButton.onclick = (e) => {
+      e.preventDefault()
+
+      subMenu.classList.toggle('_show-submenu')
+      showSubMenuButton.classList.toggle('_active')
+    }
+
+    closeSubMenuButton.onclick = () => {
+      subMenu.classList.remove('_show-submenu')
+      showSubMenuButton.classList.remove('_active')
+    }
   }
 }

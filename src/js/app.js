@@ -17,7 +17,7 @@ if (location.pathname === '/') flsFunctions.inputPin()
 document.addEventListener('DOMContentLoaded', checkIfCookieExist)
 
 flsFunctions.headerFixed()
-if (window.innerWidth > 1024) {
+if (window.innerWidth > 1024 && location.pathname !== '/') {
   checkSidebarWidth()
 }
 toggleSubMenu()
