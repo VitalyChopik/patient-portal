@@ -1,10 +1,12 @@
 .sidebar {
-  position: relative;
+  position: fixed;
   background: #142768;
   padding-top: rem(24);
-  padding-bottom: rem(24);
+  padding-bottom: rem(100);
   width: rem(387);
-  transition: $standartTrans;
+  height: 100vh;
+  transition: all 280ms ease-in-out;
+  z-index: 100;
   @include media(1200) {
     width: rem(295);
   }
@@ -28,6 +30,10 @@
     height: 100%;
     padding-left: rem(64);
     padding-right: rem(40);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     @include media(1200) {
       padding: 0 rem(15);
     }
@@ -123,6 +129,8 @@
       opacity: 1;
       visibility: visible;
       width: max-content;
+      overflow-y: auto;
+      padding-bottom: rem(40);
       @include media(1024) {
         height: 100%;
         width: 100%;
