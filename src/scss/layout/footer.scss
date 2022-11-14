@@ -2,6 +2,8 @@
   display: grid;
   grid-template-columns: rem(387) 1fr;
   background: #f7fcfe;
+  position: relative;
+  z-index: 100;
   @include media(1200) {
     grid-template-columns: rem(295) 1fr;
   }
