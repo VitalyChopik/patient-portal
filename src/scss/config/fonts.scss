@@ -46,3 +46,12 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular-Italic.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
