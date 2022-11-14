@@ -16,7 +16,7 @@ export const checkIfCookieExist = async () => {
       key === cookieKey && validPins.includes(value.split(',')[2])
   )
 
-  const obj = cookies
+  const obj = isCookieExist && cookies
   .find(([key, _]) => key === cookieKey)[1]
   .split(',')
   .map((value) => value)
