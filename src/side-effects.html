@@ -14,7 +14,7 @@
         <div data-observ></div>
         <div class="content__container">
           <!-- page класс для страницы универсальны -->
-          <section class="content__side-effects content__page">
+          <section class="content__side-effects content__page side-effects">
             <!-- section__title класс для заголовков универсальный и section__image для картинок страницы -->
             <h1 class="side-effects__title section__title">Побочные явления</h1>
             <img src="images/side-effects/section-image.png" alt="" class="section__image">
@@ -48,19 +48,21 @@
                 лечащего врача.
               </p>
             </div>
-            <div class="side-effects__accordion">
-              <h3 class="side-effects__accordion-title side-effects__block-title title-h3">Какие побочные явления могут
-                возникнуть во время лечения препаратами Тафинлар (дабрафениб) и Мекинист (траметиниб)<sup>6, 7</sup>
-              </h3>
-              <div class="accordion">
-                <ul class="accordion__items">
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-1.svg" alt="">
-                      <h3>Пирексия</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+            <h3 class="side-effects__accordion-title title-h3">Какие побочные явления могут
+              возникнуть во время лечения препаратами Тафинлар (дабрафениб) и Мекинист (траметиниб)<sup>6, 7</sup>
+            </h3>
+            <div class="side-effects__accordion accordion" data-auto-closing="false">
+              <ul class="accordion__items">
+                <li class="accordion__item" data-open data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-1.svg" alt="">
+                    <h3 class="accordion__title">Пирексия</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Пирексия — повышение температуры тела выше 38°С без признаков инфекции<sup>10</sup>.</p>
                       <p>На фоне лечения препаратами Тафинлар (дабрафениб) и Мекинист (траметиниб), согласно
                         исследованиям, у большинства (58–63%) пациентов может развиться пирексия18. При этом на практике
@@ -68,17 +70,21 @@
                       <p><strong>Как узнать о появлении пирексии?</strong></p>
                       <p><strong>Как снизить температуру?</strong></p>
                       <p><strong>Как вести себя при появлении пирексии?</strong></p>
-                      <p>Чем опасна пирексия?</p>
+                      <p><strong>Чем опасна пирексия?</strong></p>
                       <a href="pirexia.html">Узнать больше о пирексии</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-2.svg" alt="">
-                      <h3>Кожная токсичность</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-2.svg" alt="">
+                    <h3 class="accordion__title">Кожная токсичность</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>При приеме препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб) у некоторых пациентов могут
                         появиться признаки кожной токсичности.</p>
                       <p><strong>Когда обращаться за медицинской помощью?</strong></p>
@@ -87,14 +93,18 @@
                       <p><strong>Что можно делать при появлении кожной токсичности?</strong></p>
                       <a href="skin-toxic.html"> Узнать больше о кожной токсичности</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-3.svg" alt="">
-                      <h3>Офтальмологическая токсичность</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-3.svg" alt="">
+                    <h3 class="accordion__title">Офтальмологическая токсичность</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>В редких случаях на фоне приема препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб) может
                         возникнуть офтальмологическая токсичность<sup>6, 7</sup>.</p>
                       <p><strong>Как проявляется офтальмологическая токсичность?</strong></p>
@@ -102,14 +112,18 @@
                       <p><strong>Что делать при появлении признаков офтальмологической токсичности?</strong></p>
                       <a href="eye-toxic.html">Узнать больше об офтальмологической токсичности</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-4.svg" alt="">
-                      <h3>Тошнота и рвота</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-4.svg" alt="">
+                    <h3 class="accordion__title">Тошнота и рвота</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Возможно появление тошноты и рвоты во время приема препаратов Тафинлар (дабрафениб) и Мекинист
                         (траметиниб)<sup>6, 7</sup>.</p>
                       <p><strong>Надо ли обращаться к врачу при появлении тошноты и рвоты?</strong></p>
@@ -117,14 +131,18 @@
                       <p><strong>Как помочь себе при появлении тошноты и рвоты?</strong></p>
                       <a href="rvota.html">Узнать больше о тошноте и рвоте</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-5.svg" alt="">
-                      <h3>Диарея</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-5.svg" alt="">
+                    <h3 class="accordion__title">Диарея</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>При приеме препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб) возможно появление
                         диареи<sup>6, 7</sup>.</p>
                       <p><strong>В каких случаях следует обращаться за медицинской помощью?</strong></p>
@@ -132,14 +150,18 @@
                       <p><strong>Как помочь себе при диарее?</strong></p>
                       <a href="diareya.html">Узнать больше о диарее</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-6.svg" alt="">
-                      <h3>Печеночная токсичность</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-6.svg" alt="">
+                    <h3 class="accordion__title">Печеночная токсичность</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Во время лечения препаратами Тафинлар (дабрафениб) и Мекинист (траметиниб) возможно появление
                         гепатотоксичности<sup>6, 7</sup>.</p>
                       <p><strong>Как не пропустить гепатотоксичность?</strong></p>
@@ -147,14 +169,18 @@
                       <p><strong>Что делать при гепатотоксичности?</strong></p>
                       <a href="liver.html">Узнать больше о печеночной токсичности</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-7.svg" alt="">
-                      <h3>Утомляемость</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-7.svg" alt="">
+                    <h3 class="accordion__title">Утомляемость</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Еще одно нежелательное явление, которое может возникнуть на фоне приема препаратов Тафинлар
                         (дабрафениб) и Мекинист (траметиниб), — повышенная утомляемость<sup>6, 7</sup>.</p>
                       <p><strong>Если у вас появилась слабость, надо ли об этом говорить врачу?</strong></p>
@@ -162,14 +188,18 @@
                       <p><strong>Как вы можете помочь себе при повышенной утомляемости?</strong></p>
                       <a href="utomlyaemost.html">Узнать больше об утомляемости</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-8.svg" alt="">
-                      <h3>Артериальная гипертензия</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-8.svg" alt="">
+                    <h3 class="accordion__title">Артериальная гипертензия</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Артериальная гипертензия может возникнуть на фоне приема препаратов Тафинлар (дабрафениб)и
                         Мекинист (траметиниб)<sup>6, 7</sup>.</p>
                       <p><strong>Как распознать симптомы артериальной гипертензии?</strong></p>
@@ -177,14 +207,18 @@
                       <p><strong>Как помочь себе при артериальной гипертензии?</strong></p>
                       <a href="davlenie.html"> Узнать больше об артериальной гипертензии</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-9.svg" alt="">
-                      <h3>Артралгия</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-9.svg" alt="">
+                    <h3 class="accordion__title">Артралгия</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>У некоторых пациентов на фоне приема препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб)
                         может появиться артралгия<sup>6, 7</sup>. <strong>Артралгия</strong> — это боль в суставах при
                         отсутствии воспалительного процесса в них<sup>3</sup>.</p>
@@ -193,14 +227,18 @@
                       <p><strong>Как уменьшить боль в суставах?</strong></p>
                       <a href="artralgya.html">Узнать больше об артралгии</a>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title">
-                      <img src="images/side-effects/icon-10.svg" alt="">
-                      <h3>Головная боль</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <img src="images/side-effects/icon-10.svg" alt="">
+                    <h3 class="accordion__title">Головная боль</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <p>Крайне редко при приеме препаратов Тафинлар (дабрафениб) и Мекинист (траметиниб) может
                         беспокоить головная боль<sup>6,7</sup>.</p>
                       <p><strong>Следует ли говорить врачу, если беспокоит головная боль?</strong></p>
@@ -208,9 +246,9 @@
                       <p><strong>Как облегчить головную боль?</strong></p>
                       <a href="headpain.html">Узнать больше о головной боли</a>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                  </div>
+                </li>
+              </ul>
             </div>
             <!-- завершение расрывающегося списка -->
 

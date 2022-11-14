@@ -12,72 +12,91 @@
       @@include('html/sidebar.html', {})
       <main class="content">
         <div data-observ></div>
-        <section class="content__ask drug-storage">
+        <section class="content__ask ask drug-storage">
           <div class="ask__container">
             <h2 class="ask__title title-h2">
-                Какие вопросы задать врачу на приеме
+              Какие вопросы задать врачу на приеме
             </h2>
             <div class="ask__banner-image page-banner-img">
               <img src="@img/ask/bg_01.png" alt="">
             </div>
             <!-- аккордион -->
-            <div class="ask__accordion accordion">
-                <ul class="accordion__items">
-                  <li class="accordion__item active">
-                    <div class="accordion__title one">
-                      <h3>Вопросы про врачей, которые будут принимать участие в лечении</h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+            <div class="ask__accordion accordion" data-auto-closing="false">
+              <ul class="accordion__items">
+                <li class="accordion__item" data-open data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">Вопросы про врачей, которые будут принимать участие в лечении</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <ol class="ask__list">
-                        <li class="ask__list-item">Какие врачи будут участвовать в моем лечении и в чем роль каждого из них?</li>
+                        <li class="ask__list-item">Какие врачи будут участвовать в моем лечении и в чем роль каждого из
+                          них?</li>
                         <li class="ask__list-item">Кто будет руководить моим лечением в целом?</li>
                         <li class="ask__list-item">Как часто мне нужно будет приходить на прием?</li>
                       </ol>
                     </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title two">
-                      <h3>Вопросы про заболевание</h3>
-                      <span class="accordion__icon"></span>
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#2862b6">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">Вопросы про заболевание</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
+                      <ol class="ask__list">
+                        <li class="ask__list-item">Есть ли у меня еще где-нибудь опухолевые клетки?</li>
+                        <li class="ask__list-item">Каков прогноз в моем случае?</li>
+                        <li class="ask__list-item">Насколько велик риск рецидива?</li>
+                        <li class="ask__list-item">Могут ли у меня возникнуть опухолевые клетки в других частях тела?
+                        </li>
+                        <li class="ask__list-item">Какие еще диагностические исследования и процедуры мне понадобятся?
+                        </li>
+                      </ol>
                     </div>
-                    <div class="accordion__content">
-                        <ol class="ask__list">
-                            <li class="ask__list-item">Есть ли у меня еще где-нибудь опухолевые клетки?</li>
-                            <li class="ask__list-item">Каков прогноз в моем случае?</li>
-                            <li class="ask__list-item">Насколько велик риск рецидива?</li>
-                            <li class="ask__list-item">Могут ли у меня возникнуть опухолевые клетки в других частях тела?</li>
-                            <li class="ask__list-item">Какие еще диагностические исследования и процедуры мне понадобятся?</li>
-                          </ol>
-                    </div>
-                  </li>
-                  <li class="accordion__item active">
-                    <div class="accordion__title tree">
-                      <h3>
-                        Вопросы про лечение
-                      </h3>
-                      <span class="accordion__icon"></span>
-                    </div>
-                    <div class="accordion__content">
+                  </div>
+                </li>
+                <li class="accordion__item" data-color-back="#142768">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">Вопросы про лечение</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
+                  </div>
+                  <div class="accordion__content">
+                    <div class="accordion__content-body">
                       <ol class="ask__list">
                         <li class="ask__list-item">Что произойдет, если я ничего не буду предпринимать?</li>
                         <li class="ask__list-item">Нужно ли мне лечиться прямо сейчас?</li>
-                        <li class="ask__list-item">Повлияют ли на возможности лечения мой возраст, общее состояние здоровья, другие факторы?</li>
+                        <li class="ask__list-item">Повлияют ли на возможности лечения мой возраст, общее состояние
+                          здоровья, другие факторы?</li>
                         <li class="ask__list-item">Как я пойму, что лечение работает / не работает?</li>
-                        <li class="ask__list-item">Какие есть еще варианты, если выбранное лечение перестанет работать?</li>
+                        <li class="ask__list-item">Какие есть еще варианты, если выбранное лечение перестанет работать?
+                        </li>
                         <li class="ask__list-item">Что мне стоит ожидать от этого лечения?</li>
                         <li class="ask__list-item">С какими осложнениями связано мое лечение?</li>
-                        <li class="ask__list-item">Повлияет ли лечение на мою способность иметь детей? Если да, то как я могу сохранить эту способность?</li>
+                        <li class="ask__list-item">Повлияет ли лечение на мою способность иметь детей? Если да, то как я
+                          могу сохранить эту способность?</li>
                         <li class="ask__list-item">Какие результаты ожидаемы для выбранного варианта лечения?</li>
                         <li class="ask__list-item">Могу ли я стать участником клинического исследования?</li>
                         <li class="ask__list-item">Какими службами помощи я могу воспользоваться?</li>
-                        <li class="ask__list-item">Могу ли я во время противоопухолевого лечения получать еще какую-нибудь терапию?</li>
-                        <li class="ask__list-item">Если вдруг у меня поднимется температура, возникнет какая-то другая реакция или побочный эффект из-за болезни или лечения, причем это произойдет в выходной или праздничный день, что мне в таких случаях делать? Куда обращаться?</li>
+                        <li class="ask__list-item">Могу ли я во время противоопухолевого лечения получать еще какую-нибудь
+                          терапию?</li>
+                        <li class="ask__list-item">Если вдруг у меня поднимется температура, возникнет какая-то другая
+                          реакция или побочный эффект из-за болезни или лечения, причем это произойдет в выходной или
+                          праздничный день, что мне в таких случаях делать? Куда обращаться?</li>
                       </ol>
                     </div>
-                  </li>
-                </ul>
-              </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
           </div>
         </section>

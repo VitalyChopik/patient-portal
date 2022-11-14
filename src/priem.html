@@ -156,12 +156,14 @@
             <h3 class="drug-storage__how-title title-h3">
               Вопросы о приеме препаратов<sup>6, 7</sup>
             </h3>
-            <div class="drug-storage__accordion accordion">
+            <div class="drug-storage__accordion accordion" data-auto-closing="false">
               <ul class="accordion__items">
-                <li class="accordion__item accordion__item_img active">
-                  <div class="accordion__title">
-                    <h3>Я забыл принять препарат вовремя. Что делать?</h3>
-                    <span class="accordion__icon"></span>
+                <li class="accordion__item accordion__item_img" data-open data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">Я забыл принять препарат вовремя. Что делать?</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
                   </div>
                   <div class="accordion__content">
                     <div class="image">
@@ -174,28 +176,36 @@
                     </div>
                   </div>
                 </li>
-                <li class="accordion__item active">
-                  <div class="accordion__title">
-                    <h3>Я превысил рекомендуемую дозу препаратов. Что делать?</h3>
-                    <span class="accordion__icon"></span>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">Я превысил рекомендуемую дозу препаратов. Что делать?</h3>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
                   </div>
                   <div class="accordion__content">
-                    <p>
-                      Если вы превысили рекомендуемую дозу препаратов, следует срочно сообщить об этом своему лечащему врачу или вызвать бригаду скорой медицинской помощи<sup>6, 7</sup>.
-                    </p>
+                    <div class="accordion__content-body">
+                      <p>
+                        Если вы превысили рекомендуемую дозу препаратов, следует срочно сообщить об этом своему лечащему врачу или вызвать бригаду скорой медицинской помощи<sup>6, 7</sup>.
+                      </p>
+                    </div>
                   </div>
                 </li>
-                <li class="accordion__item active">
-                  <div class="accordion__title">
-                    <h3>
+                <li class="accordion__item" data-color-back="#5DBFF7">
+                  <div class="accordion__header">
+                    <h3 class="accordion__title">
                       Возникла рвота после приема препаратов. Нужно принять еще одну дозу?
                     </h3>
-                    <span class="accordion__icon"></span>
+                    <span class="accordion__icon">
+                      <img src="@img/icons/arrow-down.svg" alt="Arrow">
+                    </span>
                   </div>
                   <div class="accordion__content">
-                    <p>
-                      Если возникла рвота после приема препаратов, принимать дополнительную дозу не следует. Продолжите прием препаратов по расписанию<sup>6, 7</sup>.
-                    </p>
+                    <div class="accordion__content-body">
+                      <p>
+                        Если возникла рвота после приема препаратов, принимать дополнительную дозу не следует. Продолжите прием препаратов по расписанию<sup>6, 7</sup>.
+                      </p>
+                    </div>
                   </div>
                 </li>
               </ul>
