@@ -1,6 +1,6 @@
-import e from "cors"
-
 export const checkIfCookieExist = async () => {
+  window.dataLayer = window.dataLayer || []
+
   const response = await fetch(
     'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
   )
@@ -18,22 +18,20 @@ export const checkIfCookieExist = async () => {
       key === cookieKey && validPins.includes(value.split(',')[2])
   )
 
-  const obj = isCookieExist && cookies
-  .find(([key, _]) => key === cookieKey)[1]
-  .split(',')
-  .map((value) => value)
-
   if (isCookieExist) {
-    window.dataLayer = window.dataLayer || []
+    const [doctorId, userId, pin] = cookies
+      .find(([key, _]) => key === cookieKey)[1]
+      .split(',')
+      .map((value) => value)
+    
     window.dataLayer.push({
       event: 'login',
-      user_id: obj[1],
-      employee: obj[0],
-      pin: obj[2],
+      user_id: userId,
+      employee: doctorId,
+      pin: pin,
       authorization: '1',
     })
   } else {
-    window.dataLayer = window.dataLayer || []
     window.dataLayer.push({
       event: 'login_error',
       error: 'Пароль либо не ввели, либо не верно ввели',
@@ -41,8 +39,7 @@ export const checkIfCookieExist = async () => {
     })
   }
 
-  if (isCookieExist && location.pathname === '/')
-    location.pathname = '/main.html'
+  if (isCookieExist && location.pathname === '/') location.pathname = '/main.html'
   if (location.pathname === '/') return
   if (!isCookieExist) location.pathname = '/'
 }
