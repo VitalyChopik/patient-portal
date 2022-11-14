@@ -34,7 +34,6 @@
   display: flex;
 }
 .content {
-  position: relative;
   flex: 1 0;
   transition: $standartTrans;
   // .content__top
@@ -345,7 +344,7 @@ body {
   &._lock {
     overflow: hidden;
   }
-  &._sidebar-show {
+  &._sidebar-close {
     .header__container {
       @include media(1200) {
         padding-left: rem(45 + 15);

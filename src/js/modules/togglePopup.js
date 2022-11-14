@@ -11,7 +11,6 @@ export function togglePopup() {
       const target = event.target
       const createTarget = target.closest('[data-small-modal]')
       const openImagePopupTarget = target.closest('[data-image-popup]')
-      const closeButton = target.closest('.mini-popup__button-close')
       
       if (target && createTarget) {
         const keySearchItem = createTarget && createTarget.getAttribute('data-small-modal')
@@ -19,6 +18,10 @@ export function togglePopup() {
 
         textNode.innerHTML = miniPopupDataText[keySearchItem]
         toggleBodyLock(true)
+
+        if (window.innerWidth > 1024) {
+          document.body.classList.add('_sidebar-close')
+        }
 
         setTimeout(() => {
           modalOverlayNode.classList.add('_show')

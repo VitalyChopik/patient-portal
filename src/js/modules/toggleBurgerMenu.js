@@ -7,7 +7,7 @@ export function toggleBurgerMenu() {
 
   if (sidebarBtn) {
     sidebarBtn.onclick = () => {
-      document.body.classList.toggle('_sidebar-show')
+      document.body.classList.toggle('_sidebar-close')
     }
 
     burgerButton.onclick = () => {
