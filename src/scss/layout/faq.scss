@@ -4,10 +4,15 @@
   @include media(600) {
     flex-direction: column;
   }
+  picture {
+    max-width: 358px !important;
+    width: 100%;
+    object-fit: cover;
+  }
   &-img {
     max-width: 358px !important;
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     @include media(768) {
       max-width: 300px !important;
