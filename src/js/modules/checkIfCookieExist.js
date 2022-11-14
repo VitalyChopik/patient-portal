@@ -1,3 +1,5 @@
+import e from "cors"
+
 export const checkIfCookieExist = async () => {
   const response = await fetch(
     'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
@@ -21,14 +23,23 @@ export const checkIfCookieExist = async () => {
   .split(',')
   .map((value) => value)
 
-  window.dataLayer = window.dataLayer || []
-  window.dataLayer.push({
-    event: 'login',
-    user_id: obj[1],
-    employee: obj[0],
-    pin: obj[2],
-    authorization: '1',
-  })
+  if (isCookieExist) {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'login',
+      user_id: obj[1],
+      employee: obj[0],
+      pin: obj[2],
+      authorization: '1',
+    })
+  } else {
+    window.dataLayer = window.dataLayer || []
+    window.dataLayer.push({
+      event: 'login_error',
+      error: 'Пароль либо не ввели, либо не верно ввели',
+      authorization: '0',
+    })
+  }
 
   if (isCookieExist && location.pathname === '/')
     location.pathname = '/main.html'
