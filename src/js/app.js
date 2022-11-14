@@ -4,10 +4,9 @@ import { toggleSubMenu } from './modules/toggleSubMenu'
 import { toggleBurgerMenu } from './modules/toggleBurgerMenu'
 import { setActiveMenuLink } from './modules/setActiveMenuLink'
 import { showMoreText } from './modules/showMoreText'
-import { accordion } from './modules/accordion'
-// import { stickyMenu } from './modules/stickyMenu'
 import { togglePopup } from './modules/togglePopup'
 import { checkSidebarWidth } from './modules/checkSidebarWidth'
+import { newAccordion } from './modules/newAccordion'
 
 /* Раскомментировать для использования */
 // import Swiper, { Navigation, Pagination } from 'swiper'
@@ -24,8 +23,7 @@ toggleSubMenu()
 toggleBurgerMenu()
 setActiveMenuLink()
 showMoreText()
-accordion()
-// stickyMenu()
+newAccordion()
 togglePopup()
 
 window.addEventListener('resize', () => {
