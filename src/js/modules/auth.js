@@ -26,7 +26,7 @@ export function inputPin() {
 
       if (isValidPin) {
         console.log('Пароль введен верно!')
-        const loginInfo = objectAuth.find(({ Pin }) => Pin === 'AfLfJp')
+        const loginInfo = objectAuth.find(({ Pin }) => Pin === enteredPin)
 
         location.pathname = 'main.html'
         createCookie('_SID', loginInfo, 30)
