@@ -2,7 +2,8 @@ import { createCookie } from '../helpers/createCookie'
 import { form, allInputs, buttonSubmit } from '../helpers/elementsNodeList'
 
 export function inputPin() {
-  const DATA_URL = 'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
+  const DATA_URL =
+    'https://script.google.com/macros/s/AKfycbySwaA8H_OpIpAxSdDNCxFv_FigjTvbYPE1nmecgiCqaZf8X0hsJIBgjEBnhU5YsVWtOg/exec'
 
   form.addEventListener('submit', checkPin)
   allInputs.forEach((input, index) => {
@@ -14,6 +15,7 @@ export function inputPin() {
 
   async function checkPin(event) {
     event.preventDefault()
+    window.dataLayer = window.dataLayer || []
 
     try {
       buttonSubmit.disabled = true
@@ -28,10 +30,22 @@ export function inputPin() {
         console.log('Пароль введен верно!')
         const loginInfo = objectAuth.find(({ Pin }) => Pin === enteredPin)
 
+        window.dataLayer.push({
+          event: 'login',
+          user_id: loginInfo.UserId,
+          employee: loginInfo.DoctorId,
+          authorization: '1',
+        })
+
         location.pathname = 'main.html'
         createCookie('_SID', loginInfo, 30)
       } else {
         console.log('Вы ввели не верный пароль, попробуйте снова!')
+
+        window.dataLayer.push({
+          event: 'login_error',
+          authorization: '0',
+        })
 
         this.classList.add('_error')
       }

@@ -18,15 +18,11 @@ export const checkIfCookieExist = async () => {
 
   const dataLayerObject = isCookieExist
     ? {
-        event: 'login',
         user_id: userId,
         employee: doctorId,
-        pin: pin,
         authorization: '1',
       }
     : {
-        event: 'login_error',
-        error: 'Пароль либо не ввели, либо не верно ввели',
         authorization: '0',
       }
 
