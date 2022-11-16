@@ -45,6 +45,7 @@ export function inputPin() {
         window.dataLayer.push({
           event: 'login_error',
           authorization: '0',
+          error: 'Пользователь ввёл не верный пароль',
         })
 
         this.classList.add('_error')
