@@ -5,12 +5,15 @@
   background-image: url("./../images/main/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+
   @include media(768) {
     @include adaptiveClamp('padding-top', 150, 89, 768, 390, 1);
     @include adaptiveClamp('padding-bottom', 48, 110, 768, 390, 1);
   }
+
   // .top-bg__container
-  &__container { }
+  &__container {}
+
   // .top-bg__body
   &__body {
     max-width: rem(700);
@@ -22,6 +25,7 @@
     padding-right: rem(86);
     padding-bottom: rem(86);
     margin: 0 auto;
+
     @include media(768) {
       @include adaptiveClamp('padding-left', 96, 30, 768, 390, 1);
       @include adaptiveClamp('padding-right', 86, 30, 768, 390, 1);
@@ -29,18 +33,21 @@
       @include adaptiveClamp('padding-bottom', 86, 70, 768, 390, 1);
     }
   }
+
   // .top-bg__title
   &__title {
     font-weight: 800;
-    font-size: rem(28);
+    font-size: rem(24);
     line-height: prc(36, 28);
     text-transform: uppercase;
     color: #142768;
     @include adaptiveClamp('margin-bottom', 22, 7, 768, 390, 1);
+
     @include media(768) {
       font-size: rem(21);
     }
   }
+
   // .top-bg__description
   &__description {
     font-weight: 400;
